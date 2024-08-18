@@ -1673,6 +1673,10 @@ footer .down a {
     footer .up .subscribe .form form input {
         font-size: 1.7vw;
     }
+    footer .up .subscribe .form form button{
+        width: 3.5vw;
+        height: 7vw;
+    }
 
     footer .up .subscribe .icon {
         column-gap: 3vw;
