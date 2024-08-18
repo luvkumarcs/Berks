@@ -1,0 +1,1698 @@
+@font-face {
+    font-family: poppins, sans-serif;
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: work;
+    src: url(./WorkSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(./Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: archivo;
+    src: url(./Archivo_Condensed-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: #293241;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-site {
+    position: relative;
+}
+
+.hamberger {
+    position: fixed;
+    top: 0vw;
+    right: 2vw;
+    z-index: 110;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamberger img {
+    width: 9vw;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    background-color: #050978;
+    width: 60%;
+    height: 100%;
+    padding: 2vw;
+    padding-top: 5vw;
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.times {
+    position: fixed;
+    top: 3.5vw;
+    right: 2vw;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img {
+    width: 5vw;
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+    margin-top: 8vw;
+    margin-left: 5vw;
+}
+
+.mobile-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 5vw;
+    line-height: 7vh;
+    font-family: roboto;
+}
+
+
+
+
+
+
+
+/* code for nav Section */
+
+nav {
+    width: 100%;
+    height: 13vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    /* display: none; */
+}
+
+nav .logo {
+    width: 5vw;
+    height: 5vw;
+    /* background-color:#0E09A4; */
+}
+
+nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+nav .item {
+    width: 30%;
+    height: 8vh;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .item a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+}
+
+nav .item a:hover {
+    color: #0E09A4;
+    transform: scale(1.1);
+}
+
+nav .item button {
+    width: 9vw;
+    height: 5vh;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+    /* background-color: white; */
+    color: aqua;
+    border: 1px solid #0E09A4;
+
+}
+
+nav .item button:hover {
+    background-color: #0E09A4;
+}
+
+nav .item button:hover a {
+    color: white;
+}
+
+nav .item button:hover i {
+    color: white;
+}
+
+nav .item button a {
+    color: #0E09A4;
+}
+
+nav .item button i {
+    color: #0E09A4;
+}
+
+
+/* code for home section */
+
+section.home {
+    width: 100%;
+    height: 120vh;
+    /* background-color: red; */
+    position: relative;
+    margin-top: 4vw;
+
+
+}
+
+section.home .first {
+    width: 100%;
+    height: 55%;
+    background-color: #0A0889;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+section.home .first h2 {
+    font-size: 3vw;
+    color: white;
+    position: absolute;
+    top: 4vw;
+}
+
+section.home .first img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: relative;
+}
+
+section.home .first .sales {
+    width: 55%;
+    height: 50%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #93E658;
+    border-radius: 0.5vw;
+    position: absolute;
+    top: 12vw;
+}
+
+section.home .first .sales h4 {
+    font-size: 2vw;
+    color: white;
+}
+
+section.home .first .sales .para {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+    align-items: center;
+
+}
+
+section.home .first .sales .para p {
+    font-size: 1.1vw;
+    color: white;
+}
+
+section.home .first .sales .para p i {
+    color: #93E658;
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+section.home .first .sales .consult {
+    width: 30%;
+    height: 17%;
+    background-color: #93E658;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    font-weight: 550;
+    border-radius: 0.5vw;
+    position: absolute;
+    bottom: -1.5vw
+}
+
+
+section.home .second {
+    width: 100%;
+    height: 33%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section.home .second .card {
+    width: 33%;
+    height: 100%;
+    /* background-color: #93E658; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2vw 3vw;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+section.home .second .card:hover {
+    opacity: 0.8;
+}
+
+section.home .second .card h3 {
+    font-size: 1.7vw;
+}
+
+section.home .second .card p {
+    font-size: 1.1vw;
+    line-height: 3vh;
+}
+
+section.home .second .card button {
+    width: 7.5vw;
+    height: 5vh;
+    border-radius: 0.5vw;
+    border: none;
+    background-color: #050978;
+    transition: all 0.3s ease;
+}
+
+section.home .second .card button:hover {
+    background-color: #EFAD4E;
+}
+
+section.home .second .card button:hover a {
+    color: black;
+}
+
+section.home .second .card button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+
+section.home .second #gen {
+    background-color: #2D1857;
+}
+
+section.home .second #b2b {
+    background-color: #7D2EFA;
+}
+
+section.home .second #sale {
+    background-color: #1791FF;
+}
+
+section.home .second .card img {
+    width: 3vw;
+    height: 3vw;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 12.586vh;
+    margin-top: 1.5vw;
+    /* background-color: red; */
+}
+
+.swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* code for about section */
+
+section.about {
+    width: 100%;
+    height: 160vh;
+    /* background-color: aqua; */
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+section.about p {
+    font-size: 1.2vw;
+    line-height: 4vh;
+    margin-top: 2vw;
+    color: #111827;
+
+}
+
+section.about #para_sale1 {
+    margin-top: -1vw;
+}
+
+section.about #para_sale2 {
+    margin-top: -0.7vw;
+}
+
+section.about h2 {
+    font-size: 2.8vw;
+    text-align: center;
+    margin-top: 2vw;
+    color: #111827;
+}
+
+section.about h3 {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 3vw;
+    color: #111827;
+
+}
+
+section.about .container {
+    width: 100%;
+    height: 48%;
+    /* background-color: #1791FF; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+
+}
+
+section.about .container .card {
+    width: 24%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5vw;
+    padding: 0 1.5vw;
+    border: 1px solid rgba(128, 128, 128, 0.772);
+    transition: all 0.3s ease;
+
+}
+
+section.about .container .card:hover {
+    box-shadow: 0 0 8px grey;
+}
+
+section.about .container .card img {
+    width: 50%;
+    height: 25%;
+}
+
+section.about .container .card h4 {
+    font-size: 1.7vw;
+    color: #111827;
+}
+
+section.about .container .card p {
+    font-size: 1.2vw;
+    line-height: 3.5vh;
+    color: #111827;
+}
+
+section.about .container .card button {
+    width: 7.5vw;
+    height: 5vh;
+    border-radius: 0.5vw;
+    border: none;
+    background-color: #050978;
+    transition: all 0.3s ease;
+
+}
+
+section.about .container .card button:hover {
+    background-color: #EFAD4E;
+}
+
+section.about .container .card button:hover a {
+    color: black;
+}
+
+section.about .container .card button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+}
+
+
+/* code for carrier section */
+
+section.carrier {
+    width: 100%;
+    height: 280vh;
+    /* background-color:red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+section.carrier h5 {
+    font-size: 1vw;
+    color: #E2B842;
+    margin-top: 1vw;
+}
+
+section.carrier h2 {
+    font-size: 2.8vw;
+    color: #293241;
+    margin-top: 3vw;
+}
+
+section.carrier .component {
+    width: 100%;
+    height: 20%;
+    /* background-color: #F3F4F6; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    column-gap: 2vw;
+    align-items: center;
+
+}
+
+section.carrier .component .photo {
+    width: 14vw;
+    height: 14vw;
+}
+
+
+section.carrier .component .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+section.carrier .component .para {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 0.9vw;
+    color: #293241;
+}
+
+section.carrier .component .para h3 {
+    font-size: 1.8vw;
+    color: #293241;
+}
+
+section.carrier .component .para p {
+    font-size: 1.1vw;
+    color: #293241;
+    line-height: 3.5vh;
+
+}
+
+section.carrier .component #component {
+    align-items: end;
+    text-align: end;
+}
+
+section.carrier .cookie {
+    width: 40%;
+    height: 18%;
+    background-color: #050978;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5vw;
+    /* padding: 1vw 0; */
+    margin-top: 1vw;
+
+}
+
+section.carrier .cookie h2 {
+    font-size: 2.5vw;
+    margin-top: -0.5vw;
+    color: #F3F4F6;
+    text-align: center;
+    line-height: 7vh;
+}
+
+section.carrier .cookie p {
+    font-size: 1.2vw;
+    color: #F3F4F6;
+
+}
+
+section.carrier .cookie button {
+    width: 9vw;
+    height: 7vh;
+    border-radius: 1.5vw;
+    border: none;
+    background-color: #E2B842;
+    transition: all 0.3s ease;
+
+}
+
+section.carrier .cookie button:hover {
+    background-color: white;
+}
+
+section.carrier .cookie button:hover a {
+    color: #E2B842;
+}
+
+section.carrier .cookie button a {
+    text-decoration: none;
+    color: #F3F4F6;
+    font-size: 1vw;
+    font-weight: 600;
+
+}
+
+section.carrier .icon-container {
+    width: 100%;
+    height: 20%;
+    /* background-color: #1791FF; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+}
+
+section.carrier .icon-container .icon {
+    width: 20%;
+    height: 100%;
+    /* background-color:white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+section.carrier .icon-container .icon img {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    /* background-color:white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid #0A0889; */
+}
+
+section.carrier .icon-container .tick {
+    width: 1vw;
+    height: 2vw;
+}
+
+
+section.carrier .icon-container .icon h4 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+section.carrier .icon-container .icon h4::first-letter {
+    font-weight: 600;
+}
+
+section.carrier .icon-container .icon p {
+    font-size: 1.1vw;
+    line-height: 3.5vh;
+    text-align: center;
+}
+
+
+section.carrier .grow {
+    width: 100%;
+    height: 60vh;
+    background-color: #0A0889;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+
+
+}
+
+section.carrier .grow .left {
+    width: 40%;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+section.carrier .grow .left h2 {
+    font-size: 3vw;
+    color: white;
+    font-family: work;
+
+}
+
+section.carrier .grow .left p {
+    font-size: 1.3vw;
+    color: white;
+    font-family: work;
+}
+
+section.carrier .grow .left button {
+    width: 9vw;
+    height: 7vh;
+    border-radius: 1.5vw;
+    border: none;
+    background-color: #E2B842;
+    transition: all 0.3s ease;
+
+}
+
+section.carrier .grow .left button:hover {
+    background-color: white;
+}
+
+section.carrier .grow .left button:hover a {
+    color: #E2B842;
+}
+
+section.carrier .grow .left button a {
+    text-decoration: none;
+    color: #F3F4F6;
+    font-size: 1vw;
+    font-weight: 600;
+
+}
+
+section.carrier .grow .right {
+    width: 45%;
+    height: 90%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+
+section.carrier .grow .right .star {
+    width: 80%;
+    height: 30%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: start;
+    column-gap: 3vw;
+    align-items: center;
+    border-bottom: 3px solid #F0AD4E;
+}
+
+section.carrier .grow .right .star h1 i {
+    color: #EFAD4E;
+    font-size: 1.3vw;
+}
+
+section.carrier .grow .right .star p {
+    font-size: 0.9vw;
+    margin-top: 1vw;
+    color: white;
+    font-family: work;
+
+}
+
+section.carrier .grow .right .content {
+    width: 80%;
+    height: 70%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+section.carrier .grow .right .content p {
+    font-size: 1.1vw;
+    font-weight: 550;
+    color: white;
+    font-family: work;
+}
+
+section.carrier .grow .right .content .stephen {
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.4vw;
+    font-family: work;
+
+}
+
+section.carrier .grow .right .content .stephen img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+
+}
+
+section.carrier .grow .right .content .stephen h4 {
+    font-size: 1.2vw;
+    font-weight: 550;
+    color: white;
+    font-family: work;
+}
+
+
+section.contact {
+    width: 100%;
+    height: 200vh;
+    /* background-color:red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.contact h5 {
+    font-size: 1vw;
+    color: #E2B842;
+    margin-top: 2vw;
+
+}
+
+section.contact h2 {
+    font-size: 2vw;
+    margin-top: 2vw;
+
+}
+
+section.contact .client {
+    width: 100%;
+    height: 32%;
+    /* background-color: #1791FF; */
+    display: flex;
+    justify-content: center;
+    column-gap: 2vw;
+    align-items: center;
+}
+
+section.contact .client .card {
+    width: 24%;
+    height: 99%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5vw;
+    padding: 0vw 2vw;
+    transition: all 0.3s ease;
+    margin-top: 1vw;
+}
+
+section.contact .client .card:hover {
+    box-shadow: 0 0 10px #E2B842;
+}
+
+section.contact .client .card img {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+
+section.contact .client .card h3 {
+    font-size: 1.6vw;
+    margin-top: -1.8vw;
+    font-weight: 500;
+    font-family: work;
+    color: #050978;
+}
+
+section.contact .client .card h4 {
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 4vh;
+    color: #E2B842;
+    font-family: archivo;
+}
+
+section.contact .client .card p {
+    font-size: 1vw;
+    line-height: 3vh;
+    font-weight: 530;
+    font-family: roboto;
+    color: #293241;
+}
+
+section.contact .connect {
+    width: 100%;
+    height: 28%;
+    /* background-color: #0A0889; */
+    display: flex;
+    justify-content: center;
+    column-gap: 2vw;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+section.contact .connect .quote {
+    width: 30%;
+    height: 60%;
+    /* background-color: #93E658; */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding: 0 2vw;
+}
+
+section.contact .connect .quote h6 {
+    font-size: 0.9vw;
+    color: #E2B842;
+    font-family: archivo;
+}
+
+section.contact .connect .quote h3 {
+    font-size: 2vw;
+    font-family: work;
+    color: #293241;
+}
+
+section.contact .connect .quote p {
+    font-size: 1.2vw;
+    line-height: 3vh;
+    font-weight: 100;
+    font-family: roboto;
+    color: #293241;
+
+}
+
+section.contact .connect .form {
+    width: 30%;
+    height: 99%;
+    background-color: #E2B842;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1vw;
+
+}
+
+section.contact .connect .form form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw 2vw;
+
+}
+
+section.contact .connect .form form input {
+    width: 100%;
+    height: 4.5vh;
+    border-radius: 0.5vw;
+    padding: 0 1.5vw;
+    font-size: 1.1vw;
+    border: 0.1px solid black;
+}
+
+section.contact .connect .form form .phone,
+.company {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    column-gap: 1vw;
+}
+
+section.contact .connect .form form .phone #extension {
+    width: 45%;
+}
+
+section.contact .connect .form form p {
+    font-size: 1.1vw;
+    line-height: 3vh;
+    font-family: roboto;
+    color: #293241;
+}
+
+section.contact .connect .form form button {
+    width: 100%;
+    height: 4.5vh;
+    border-radius: 0.5vw;
+    background-color: black;
+    color: white;
+    font-size: 1.1vw;
+    transition: all 0.3s ease;
+}
+
+section.contact .connect .form form button:hover {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+section.contact h3 {
+    font-size: 2.7vw;
+    font-weight: 500;
+    color: #050978;
+    margin-top: 2vw;
+}
+
+section.contact p {
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+
+}
+
+
+section.contact .support {
+    width: 100%;
+    height: 18%;
+    /* background-color:green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+    margin-top: 1vw;
+
+}
+
+section.contact .support .para {
+    width: 27%;
+    height: 80%;
+    /* background-color: white; */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1vw;
+
+
+}
+
+section.contact .support .para h5 {
+    font-size: 1.3vw;
+    color: #FF9B00;
+}
+
+section.contact .support .para p {
+    font-size: 1.1vw;
+    line-height: 3.2vh;
+    color: #BBC5D9;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 70vh;
+    background-color: #F6F7FD;
+
+}
+
+footer .up {
+    width: 100%;
+    height: 85%;
+    /* background-color:#F6F7FD; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;
+
+}
+
+footer .up .first {
+    width: 20%;
+    height: 90%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2vw;
+}
+
+footer .up h4 {
+    font-size: 1.5vw;
+    color: #2D1857;
+    margin-top: 2vw;
+}
+
+footer .up .first img {
+    width: 12vw;
+    height: 12vw;
+}
+
+footer .up .first p {
+    font-size: 1.1vw;
+    line-height: 3vh;
+}
+
+footer .up .link {
+    width: 10%;
+    height: 90%;
+    /* background-color: white; */
+}
+
+footer .up .link ul {
+    margin-top: 1.5vw;
+}
+
+footer .up .link ul li {
+    list-style: none;
+    font-size: 1.1vw;
+    line-height: 4vh;
+
+}
+
+footer .up .link ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+footer .up .link ul li a:hover {
+    color: #1791FF;
+    transform: scale(1.1);
+}
+
+
+
+footer .up .subscribe {
+    width: 18%;
+    height: 90%;
+    /* background-color: white; */
+}
+
+footer .up .subscribe .form {
+    width: 100%;
+    height: 17%;
+    margin-top: 1vw;
+    /* background-color:red; */
+    border-radius: 2vw;
+    border: 1px solid black;
+}
+
+footer .up .subscribe .form form {
+    width: 100%;
+    height: 100%;
+
+}
+
+footer .up .subscribe .form form input {
+    width: 75%;
+    height: 100%;
+    border: none;
+    border-radius: 2vw;
+    padding: 0 2vw;
+    font-size: 1.2vw;
+}
+
+footer .up .subscribe .form form button {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #5366CF
+}
+
+footer .up .subscribe .form form input:focus {
+    outline: none;
+}
+
+footer .up .subscribe .icon {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1vw;
+
+}
+
+footer .up .subscribe .icon a i {
+    font-size: 1.8vw;
+    color: black;
+}
+
+footer .up .subscribe .icon a i:hover {
+    transform: scale(1.1);
+    color: #050978;
+}
+
+footer .down {
+    width: 100%;
+    height: 15%;
+    /* background-color: red; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+}
+
+footer .down p span {
+    color: #050978;
+}
+
+footer .down a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+}
+
+
+/* code for responsive web design */
+
+@media (max-width:515px) {
+    nav {
+        display: none;
+    }
+
+    .hamberger {
+        display: block;
+    }
+
+    section.home {
+        margin-top: 0;
+    }
+
+    section.home .first {
+        width: 100%;
+        height: 25%;
+    }
+
+    section.home .first h2 {
+        font-size: 6vw;
+    }
+
+    section.home .first .sales {
+        width: 70%;
+
+    }
+
+    section.home .first .sales h4 {
+        font-size: 2.6vw;
+    }
+
+    section.home .first .sales .para {
+        height: 60%;
+    }
+
+    section.home .first .sales .para p {
+        font-size: 1.75vw;
+    }
+
+    section.home .first .sales .para p i {
+        font-size: 2.5vw;
+    }
+
+
+    section.home .second {
+        height: 20%;
+    }
+
+    section.home .second .card h3 {
+        font-size: 1.9vw;
+    }
+
+    section.home .second .card p {
+        font-size: 1.4vw;
+        line-height: 2vh;
+    }
+
+    section.home .second .card button {
+        width: 9vw;
+        height: 3vh;
+    }
+
+
+    .swiper-wrapper {
+        height: 8vh;
+    }
+
+    .swiper-wrapper .swiper-slide img {
+        width: 8vw;
+        height: 3.5vh;
+    }
+
+
+
+    section.about {
+        width: 100%;
+        height: 160vh;
+        padding: 2vw 3vw;
+
+    }
+
+    section.about p {
+        font-size: 2.8vw;
+        line-height: 3vh;
+        margin-top: -95vw;
+        color: #111827;
+
+    }
+
+    section.about #para_sale1 {
+        margin-top: -38vw;
+    }
+
+    section.about #para_sale2 {
+        margin-top: -40vw;
+    }
+
+    section.about h2 {
+        font-size: 5vw;
+        margin-top: -38vw;
+    }
+
+    section.about h3 {
+        font-size: 4.8vw;
+        margin-top: -38vw;
+
+    }
+
+    section.about .container {
+        height: 80%;
+        margin-top: -38vw;
+        flex-direction: column;
+
+    }
+
+    section.about .container .card {
+        width: 90%;
+        height: 24%;
+        padding: 0 8vw;
+    }
+
+    section.about .container .card img {
+        width: 60%;
+        height: 40%;
+        margin-top: 2vw;
+    }
+
+    section.about .container .card h4 {
+        font-size: 5vw;
+    }
+
+    section.about .container .card p {
+        font-size: 2.5vw;
+        line-height: 1.8vh;
+        margin-top: 1vw;
+    }
+
+    section.about .container .card button {
+        width: 12vw;
+        height: 3vh;
+    }
+
+    section.about .container .card button a {
+        font-size: 1.8vw;
+    }
+
+    section.carrier {
+        height: 160vh;
+    }
+
+    section.carrier h5 {
+        font-size: 3vw;
+        margin-top: 0;
+    }
+
+    section.carrier h2 {
+        font-size: 6.5vw;
+        color: #293241;
+        margin-top: 3vw;
+    }
+
+    section.carrier .component {
+        column-gap: 5vw;
+    }
+
+    section.carrier .component .photo {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    section.carrier .component .para {
+        width: 50%;
+    }
+
+    section.carrier .component .para h3 {
+        font-size: 3vw;
+    }
+
+    section.carrier .component .para p {
+        font-size: 2.3vw;
+        line-height: 2vh;
+
+    }
+
+    section.carrier .cookie {
+        width: 80%;
+    }
+
+    section.carrier .cookie h2 {
+        font-size: 5vw;
+        line-height: 4vh;
+    }
+
+    section.carrier .cookie p {
+        font-size: 2.7vw;
+
+    }
+
+    section.carrier .cookie button {
+        width: 18vw;
+        height: 4vh;
+    }
+
+    section.carrier .cookie button a {
+        font-size: 2vw;
+
+    }
+
+
+    section.carrier .icon-container .icon {
+        height: 80%;
+    }
+
+    section.carrier .icon-container .tick {
+        width: 2vw;
+        height: 3vw;
+    }
+
+    section.carrier .icon-container .icon h4 {
+        font-size: 3vw;
+    }
+
+    section.carrier .icon-container .icon p {
+        font-size: 2vw;
+        line-height: 2vh;
+    }
+
+    section.carrier .grow {
+        height: 40vh;
+    }
+
+    section.carrier .grow .left {
+        width: 45%;
+        height: 60%;
+    }
+
+    section.carrier .grow .left h2 {
+        font-size: 4vw;
+    }
+
+    section.carrier .grow .left p {
+        font-size: 2vw;
+    }
+
+    section.carrier .grow .left button {
+        width: 15vw;
+        height: 4vh;
+    }
+    section.carrier .grow .left button a {
+        font-size: 2vw;
+
+    }
+
+    section.carrier .grow .right {
+        height: 70%;
+    }
+
+
+    section.carrier .grow .right .star h1 i {
+        font-size: 2vw;
+    }
+
+    section.carrier .grow .right .star p {
+        font-size: 1.5vw;
+
+    }
+
+    section.carrier .grow .right .content p {
+        font-size: 2vw;
+    }
+
+    section.carrier .grow .right .content .stephen img {
+        width: 9vw;
+        height: 9vw;
+
+    }
+
+    section.carrier .grow .right .content .stephen h4 {
+        font-size: 2.4vw;
+    }
+
+
+    section.contact h5 {
+        font-size: 3vw;
+
+    }
+
+    section.contact h2 {
+        font-size: 7vw;
+
+    }
+
+    section.contact .client {
+        height: 50%;
+        flex-direction: column;
+    }
+
+    section.contact .client .card {
+        width: 60%;
+        background-color: white;
+        border: 1px solid black;
+        padding: 0vw 4vw;
+    }
+
+    section.contact .client .card img {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    section.contact .client .card h3 {
+        font-size: 6vw;
+    }
+
+    section.contact .client .card h4 {
+        font-size: 4.1vw;
+        font-weight: 300;
+        line-height: 3.5vh;
+    }
+
+    section.contact .client .card p {
+        font-size: 2vw;
+        line-height: 2vh;
+        font-weight: 430;
+    }
+
+    section.contact .connect {
+        height: 32%;
+        flex-direction: column;
+    }
+
+    section.contact .connect .quote {
+        width: 80%;
+        height: 40%;
+        row-gap: 0.2vh;
+    }
+
+    section.contact .connect .quote h6 {
+        font-size: 3vw;
+    }
+
+    section.contact .connect .quote h3 {
+        font-size: 7vw;
+    }
+
+    section.contact .connect .quote p {
+        font-size: 2.5vw;
+        line-height: 2.5vh;
+    }
+
+    section.contact .connect .form {
+        width: 80%;
+        height: 90%;
+    }
+
+    section.contact .connect .form form input {
+        height: 4vh;
+    }
+
+    section.contact .connect .form form .phone,
+    .company {
+        height: 4vh;
+    }
+
+    section.contact .connect .form form p {
+        font-size: 2.5vw;
+        line-height: 2vh;
+    }
+
+    section.contact .connect .form form button {
+        height: 4vh;
+        font-size: 3vw;
+    }
+
+    section.contact h3 {
+        font-size: 6vw;
+    }
+
+    section.contact p {
+        font-size: 3vw;
+
+    }
+
+    section.contact .support .para h5 {
+        font-size: 3vw;
+    }
+
+    section.contact .support .para p {
+        font-size: 2vw;
+        line-height: 2vh;
+    }
+
+
+    footer {
+        height: 40vh;
+
+    }
+
+    footer .up {
+        width: 100%;
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5vw;
+
+    }
+
+    footer .up .first {
+        width: 40%;
+    }
+
+    footer .up h4 {
+        font-size: 4vw;
+    }
+
+    footer .up .first img {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    footer .up .first p {
+        font-size: 2.2vw;
+        line-height: 2.5vh;
+    }
+
+    footer .up .link {
+        width: 20%;
+    }
+
+    footer .up .link ul li {
+        font-size: 3vw;
+        line-height: 3.5vh;
+
+    }
+
+
+    footer .up .subscribe {
+        width: 20%;
+    }
+
+    footer .up .subscribe .form {
+        height: 15%;
+    }
+
+
+    footer .up .subscribe .form form input {
+        font-size: 1.7vw;
+    }
+
+    footer .up .subscribe .icon {
+        column-gap: 3vw;
+
+    }
+
+    footer .up .subscribe .icon a i {
+        font-size: 3vw;
+    }
+
+    footer .down p span {
+        color: #050978;
+    }
+
+    footer .down a {
+        font-size: 2vw;
+    }
+
+
+
+
+
+}
