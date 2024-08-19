@@ -1236,6 +1236,7 @@ footer .down a {
 
     section.home {
         margin-top: 0;
+        
     }
 
     section.home .first {
@@ -1255,6 +1256,9 @@ footer .down a {
     section.home .first .sales h4 {
         font-size: 2.6vw;
     }
+    section.home .first .sales .consult{
+        font-size: 1.7vw;
+    }
 
     section.home .first .sales .para {
         height: 60%;
@@ -1270,26 +1274,42 @@ footer .down a {
 
 
     section.home .second {
-        height: 20%;
+        height: 65%;
+        /* background-color: red; */
+        flex-direction: column;
+    }
+    section.home .second .card{
+        width: 100%;
+        padding: 0 5vw;
+    }
+    section.home .second .card img{
+        width: 8vw;
+        height: 8vw;
     }
 
     section.home .second .card h3 {
-        font-size: 1.9vw;
+        font-size: 3.8vw;
     }
 
     section.home .second .card p {
-        font-size: 1.4vw;
+        font-size: 3vw;
         line-height: 2vh;
+        font-weight: 100;
+        line-height: 3vh;
     }
 
     section.home .second .card button {
-        width: 9vw;
-        height: 3vh;
+        width: 12vw;
+        height: 3.5vh;
+    }
+    section.home .second .card button a{
+        font-size: 1.5vw;
     }
 
 
     .swiper-wrapper {
         height: 8vh;
+        display: none;
     }
 
     .swiper-wrapper .swiper-slide img {
@@ -1301,49 +1321,52 @@ footer .down a {
 
     section.about {
         width: 100%;
-        height: 160vh;
+        height: 220vh;
         padding: 2vw 3vw;
+        /* background-color: red; */
+        margin-top: -10vw;
 
     }
 
     section.about p {
-        font-size: 2.8vw;
+        font-size: 3vw;
         line-height: 3vh;
-        margin-top: -95vw;
+        /* margin-top: -95vw; */
         color: #111827;
 
     }
 
     section.about #para_sale1 {
-        margin-top: -38vw;
+        /* margin-top: -38vw; */
     }
 
     section.about #para_sale2 {
-        margin-top: -40vw;
+        /* margin-top: -40vw; */
     }
 
     section.about h2 {
-        font-size: 5vw;
-        margin-top: -38vw;
+        font-size: 5.5vw;
+        /* margin-top: -38vw; */
     }
 
     section.about h3 {
-        font-size: 4.8vw;
-        margin-top: -38vw;
+        font-size: 5vw;
+        /* margin-top: -38vw; */
 
     }
 
     section.about .container {
-        height: 80%;
-        margin-top: -38vw;
+        height: 85%;
+        /* margin-top: -38vw; */
         flex-direction: column;
 
     }
 
     section.about .container .card {
         width: 90%;
-        height: 24%;
+        height: 24.5%;
         padding: 0 8vw;
+       
     }
 
     section.about .container .card img {
@@ -1357,9 +1380,9 @@ footer .down a {
     }
 
     section.about .container .card p {
-        font-size: 2.5vw;
-        line-height: 1.8vh;
-        margin-top: 1vw;
+        font-size: 2.6vw;
+        line-height: 2vh;
+        margin-top: 0.5vw;
     }
 
     section.about .container .card button {
@@ -1373,6 +1396,7 @@ footer .down a {
 
     section.carrier {
         height: 160vh;
+        /* background-color: red; */
     }
 
     section.carrier h5 {
@@ -1387,7 +1411,7 @@ footer .down a {
     }
 
     section.carrier .component {
-        column-gap: 5vw;
+        column-gap: 3vw;
     }
 
     section.carrier .component .photo {
@@ -1400,12 +1424,12 @@ footer .down a {
     }
 
     section.carrier .component .para h3 {
-        font-size: 3vw;
+        font-size: 3.7vw;
     }
 
     section.carrier .component .para p {
-        font-size: 2.3vw;
-        line-height: 2vh;
+        font-size: 2.6vw;
+        line-height: 2.3vh;
 
     }
 
@@ -1419,7 +1443,7 @@ footer .down a {
     }
 
     section.carrier .cookie p {
-        font-size: 2.7vw;
+        font-size: 2.9vw;
 
     }
 
@@ -1444,11 +1468,11 @@ footer .down a {
     }
 
     section.carrier .icon-container .icon h4 {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     section.carrier .icon-container .icon p {
-        font-size: 2vw;
+        font-size: 2.2vw;
         line-height: 2vh;
     }
 
@@ -1462,11 +1486,11 @@ footer .down a {
     }
 
     section.carrier .grow .left h2 {
-        font-size: 4vw;
+        font-size: 4.2vw;
     }
 
     section.carrier .grow .left p {
-        font-size: 2vw;
+        font-size: 2.2vw;
     }
 
     section.carrier .grow .left button {
@@ -1535,7 +1559,7 @@ footer .down a {
     }
 
     section.contact .client .card h3 {
-        font-size: 6vw;
+        font-size: 5.5vw;
     }
 
     section.contact .client .card h4 {
@@ -1545,9 +1569,9 @@ footer .down a {
     }
 
     section.contact .client .card p {
-        font-size: 2vw;
+        font-size: 2.3vw;
         line-height: 2vh;
-        font-weight: 430;
+        font-weight: 450;
     }
 
     section.contact .connect {
@@ -1581,6 +1605,7 @@ footer .down a {
 
     section.contact .connect .form form input {
         height: 4vh;
+        font-size: 1.6vh;
     }
 
     section.contact .connect .form form .phone,
@@ -1675,7 +1700,7 @@ footer .down a {
     }
     footer .up .subscribe .form form button{
         width: 3.5vw;
-        height: 7vw;
+        height: 4.5vw;
     }
 
     footer .up .subscribe .icon {
@@ -1684,7 +1709,7 @@ footer .down a {
     }
 
     footer .up .subscribe .icon a i {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     footer .down p span {
@@ -1693,6 +1718,7 @@ footer .down a {
 
     footer .down a {
         font-size: 2vw;
+        display: none;
     }
 
 
