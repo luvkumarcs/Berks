@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .head {
+            width: 100%;
+            height: 15vh;
+            text-align: center;
+            font-size: 3vw;
+            /* font-weight: 600; */
+            margin: 3vw 0;
+            background-color: #050978;
+            margin-top: 13vh;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section.contact {
+            height: 140vh;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-around;
+            row-gap: 4vh;
+            align-items: center;
+            flex-direction: column;
+            margin-top: -3vw;
+            padding: 0 5vw;
+        }
+
+        section.contact .connect {
+            height: 65vh;
+        }
+
+
+        section.contact h4 {
+            font-size: 2.5vw;
+            margin-top: 5vh;
+        }
+
+        section.contact .icon {
+            width: 50%;
+            height: 7vh;
+            /* background-color: green; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2.5vw;
+
+        }
+
+        section.contact .icon a {
+            text-decoration: none;
+            color: black;
+            font-size: 2.5vw;
+            gap: 2vw;
+            margin-top: -2vw;
+        }
+
+        section.contact .icon a:hover {
+            color: #050978;
+
+        }
+
+        section.contact .icon a:hover i {
+
+            transform: scale(1.1);
+
+        }
+
+        section.contact .icon a i {
+            column-gap: 7vw;
+        }
+
+        footer {
+            width: 100%;
+            height: 8vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5vw;
+        }
+
+        @media (max-width:600px) {
+
+            section.contact{
+                height: 200vh;
+                /* background-color: red; */
+                justify-content: space-evenly;
+                /* margin-top: 3vw; */
+            }
+
+            section.contact .connect {
+            height: 140vh;
+            margin-top: 10vh;
+        }
+
+            .head{
+                font-size: 5.5vw;
+                height: 12vh;
+            }
+
+            section.contact .support {
+                margin-top: 25vh;
+                row-gap: 5vh;
+                ;
+            }
+
+            section.contact h4{
+                font-size: 6vw;
+                margin-top: -5vh;
+            }
+
+            section.contact .icon a i{
+                font-size: 6.5vw;
+                margin-top: -3vw;
+            }
+
+            footer{
+                font-size: 3.5vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-site">
+        <button class="hamberger">
+            <img src="./Assets/hamberger.png" alt="">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="./Assets/times.svg" alt=""></button>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <hr>
+                <li><a href="./about.html">About</a></li>
+                <hr>
+                <li><a href="#">Careers</a></li>
+                <hr>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <hr>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
+            </div>
+            <div class="item">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="#careers">Careers</a>
+                <button><a href="./contact.html"><i class="fa-regular fa-comment"></i> Contact Us</a></button>
+            </div>
+        </nav>
+
+        <div class="head">
+            Our Awesome Support Team
+        </div>
+
+
+        <section class="contact">
+
+            <div class="support">
+                <div class="para">
+                    <h5>Amazing Support</h5>
+                    <p>Our technical team is here to help you build an awesome website. We usually answer support issues
+                        in
+                        less than 1 bussiness day.</p>
+                </div>
+                <div class="para">
+                    <h5>Constant Updates</h5>
+                    <p>We're constantly updating Mesmerize to ensure compatibility with the latest wordpress version.
+                        We're
+                        also working to add new, cool features.</p>
+                </div>
+                <div class="para">
+                    <h5>14 Days Money back Guarantee</h5>
+                    <p>Your satisfaction is our main goal. If you're not happy with Mesmerize for any reason, we'll
+                        refund
+                        your purchase. No questions asked.</p>
+                </div>
+            </div>
+
+            <div class="connect">
+                <div class="quote">
+                    <h6>REQUEST A QUOTE</h6>
+                    <h3>Ready to Grow? </h3>
+                    <p>A lack of new business opportunities shouldn't create unnecessary stress. We'll create
+                        opportunities,
+                        your sales team close deals.</p>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <input placeholder="First Name" type="text">
+                        <input placeholder="Last Name" type="text">
+                        <input placeholder="Email" type="email">
+                        <div class="phone">
+                            <input placeholder="Phone" type="number">
+                            <input id="extension" placeholder="Extension" type="text">
+                        </div>
+                        <div class="company">
+                            <input placeholder="Company" type="text">
+                            <input placeholder="Website" type="text">
+                        </div>
+                        <p>We use your information to contact you about our services and revelent content in line with
+                            our
+                            Privacy Policy. You may opt at any time.</p>
+                        <button>LET'S TALK</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-solid fa-envelope-open-text"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+        </section>
+
+        <footer>
+            Copyright © 2024. Design and Developed By Nevtrino.
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

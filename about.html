@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .head {
+            width: 100%;
+            height: 15vh;
+            text-align: center;
+            font-size: 3.5vw;
+            /* font-weight: 600; */
+            margin: 3vw 0;
+            background-color: #050978;
+            margin-top: 13vh;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section.about {
+            width: 100%;
+            height: 180vh;
+            /* background-color:red; */
+            margin-top: -6vh;
+
+        }
+
+        section.about .grow {
+            width: 100%;
+            height: 60vh;
+            background-color: #0A0889;
+            display: flex;
+            justify-content: space-evenly;
+            /* column-gap: 9vw; */
+            align-items: center;
+            margin-top: 2vw;
+
+
+        }
+
+        section.about .grow .left {
+            width: 40%;
+            height: 80%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 1vw;
+        }
+
+        section.about .grow .left h2 {
+            font-size: 3vw;
+            color: white;
+            font-family: work;
+
+        }
+
+        section.about .grow .left p {
+            font-size: 1.3vw;
+            color: white;
+            font-family: work;
+        }
+
+        section.about .grow .left button {
+            width: 9vw;
+            height: 7vh;
+            border-radius: 1.5vw;
+            border: none;
+            background-color: #E2B842;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+        }
+
+        section.about .grow .left button::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: whitesmoke;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: all 0.3s ease;
+
+        }
+
+        section.about .grow .left button:hover::after {
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        section.about .grow .left button:hover {
+            background-color: white;
+        }
+
+        section.about .grow .left button:hover a {
+            color: #E2B842;
+        }
+
+        section.about .grow .left button a {
+            text-decoration: none;
+            color: #F3F4F6;
+            font-size: 1vw;
+            font-weight: 600;
+
+        }
+
+        section.about .grow .right {
+            width: 45%;
+            height: 90%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            flex-direction: column;
+        }
+
+        section.about .grow .right .star {
+            width: 80%;
+            height: 30%;
+            /* background-color: white; */
+            display: flex;
+            justify-content: start;
+            column-gap: 3vw;
+            align-items: center;
+            border-bottom: 3px solid #F0AD4E;
+        }
+
+        section.about .grow .right .star h1 i {
+            color: #EFAD4E;
+            font-size: 1.3vw;
+        }
+
+        section.about .grow .right .star p {
+            font-size: 0.9vw;
+            margin-top: 1vw;
+            color: white;
+            font-family: work;
+
+        }
+
+        section.about .grow .right .content {
+            width: 80%;
+            height: 70%;
+            /* background-color: white; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            flex-direction: column;
+
+        }
+
+        section.about .grow .right .content p {
+            font-size: 1.1vw;
+            font-weight: 550;
+            color: white;
+            font-family: work;
+        }
+
+        section.about .grow .right .content .stephen {
+            width: 100%;
+            height: 40%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            column-gap: 1.4vw;
+            font-family: work;
+
+        }
+
+        section.about .grow .right .content .stephen img {
+            width: 5vw;
+            height: 5vw;
+            border-radius: 50%;
+
+        }
+
+        section.about .grow .right .content .stephen h4 {
+            font-size: 1.2vw;
+            font-weight: 550;
+            color: white;
+            font-family: work;
+        }
+
+        @media (max-width:600px) {
+            .head {
+                height: 12vh;
+                font-size: 8vw;
+            }
+
+            section.about {
+                margin-top: 0;
+                height:400vh;
+                /* background-color: red; */
+
+            }
+
+            section.about .grow {
+                height: 100vh;
+                flex-direction: column-reverse;
+            }
+
+            section.about .grow .left {
+                width: 90%;
+                height: 50%;
+                padding: 0 5vw;
+            }
+
+            section.about .grow .left h2 {
+                font-size: 8.5vw;
+            }
+
+            section.about .grow .left p {
+                font-size: 5vw;
+                text-align: center;
+            }
+
+            section.about .grow .left button {
+                width: 29vw;
+                height: 7vh;
+                border-radius: 3vw;
+            }
+
+            section.about .grow .left button a {
+                font-size: 3.3vw;
+
+            }
+
+            section.about .grow .right {
+                height: 70%;
+                width: 90%;
+                align-items: center;
+                padding: 0 6vw;
+            }
+
+            section.about .grow .right .star {
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+
+            section.about .grow .right .star h1 i {
+                font-size: 4.5vw;
+            }
+
+            section.about .grow .right .star p {
+                font-size: 3.5vw;
+
+            }
+
+            section.about .grow .right .content p {
+                font-size: 4.5vw;
+                line-height: 3.5vh;
+                text-align: center;
+            }
+
+            section.about .grow .right .content .stephen img {
+                width: 18vw;
+                height: 18vw;
+
+            }
+
+            section.about .grow .right .content .stephen h4 {
+                font-size: 4.5vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-site">
+        <button class="hamberger">
+            <img src="./Assets/hamberger.png" alt="">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="./Assets/times.svg" alt=""></button>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <hr>
+                <li><a href="./about.html">About</a></li>
+                <hr>
+                <li><a href="#">Careers</a></li>
+                <hr>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <hr>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
+            </div>
+            <div class="item">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="#careers">Careers</a>
+                <button><a href="./contact.html"><i class="fa-regular fa-comment"></i> Contact Us</a></button>
+            </div>
+        </nav>
+
+        <div class="head">
+            Who We Are
+        </div>
+
+        <section class="about">
+
+            <h2>What is Sales Outstanding?</h2>
+            <p>Sales outsourcing is the practice of hiring a third-party company to handle some or all of your sales
+                activities. This can include tasks such as prospecting for new clients, making sales calls, negotiating
+                deals, and managing customer relationships. Outsourcing sales can be a cost-effective way for a company
+                to improve its sales performance and expand into new markets without having to invest in additional
+                resources or hire new employees. Additionally, outsourcing sales can provide access to specialized
+                knowledge and expertise that may not be available within the company. <br><br>
+
+                When you work with SFI, we take responsibility for recruiting, hiring, training, and managing your sales
+                team(s) and essentially work as your sales department and an extension of your company. We ensure that
+                our sales professionals always present themselves as your brand to your customers. Many businesses
+                outsource processes like payroll, human resources, and marketing; your sales processes are no different.
+                <br><br>
+
+                >Sales outsourcing is the practice of hiring a third-party company to handle some or all of your sales
+                activities. This can include tasks such as prospecting for new clients, making sales calls, negotiating
+                deals, and managing customer relationships. Outsourcing sales can be a cost-effective way for a company
+                to improve its sales performance and expand into new markets without having to invest in additional
+                resources or hire new employees. Additionally, outsourcing sales can provide access to specialized
+                knowledge and expertise that may not be available within the company. <br><br>
+
+                When you work with SFI, we take responsibility for recruiting, hiring, training, and managing your sales
+                team(s) and essentially work as your sales department and an extension of your company. We ensure that
+                our sales professionals always present themselves as your brand to your customers. Many businesses
+                outsource processes like payroll, human resources, and marketing; your sales processes are no different.
+                <br><br>
+
+                >Sales outsourcing is the practice of hiring a third-party company to handle some or all of your sales
+                activities. This can include tasks such as prospecting for new clients, making sales calls, negotiating
+                deals, and managing customer relationships. Outsourcing sales can be a cost-effective way for a company
+                to improve its sales performance and expand into new markets without having to invest in additional
+                resources or hire new employees. Additionally, outsourcing sales can provide access to specialized
+                knowledge and expertise that may not be available within the company. <br><br>
+
+                When you work with SFI, we take responsibility for recruiting, hiring, training, and managing your sales
+                team(s) and essentially work as your sales department and an extension of your company. We ensure that
+                our sales professionals always present themselves as your brand to your customers. Many businesses
+                outsource processes like payroll, human resources, and marketing; your sales processes are no different.
+                <br><br>
+            </p>
+
+            <div class="grow">
+                <div class="left">
+                    <h2>Ready to Grow?</h2>
+                    <p>No commitments. Cancel Anytime.</p>
+                    <button><a href="#">LET'S TALK</a></button>
+                </div>
+                <div class="right">
+                    <div class="star">
+                        <h1>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                        <p>5/5 STARS</p>
+                    </div>
+                    <div class="content">
+                        <p>"East Core Inc. is hands down the best outsourced <br> sales organization I've worked with."
+                        </p>
+                        <div class="stephen">
+                            <img src="./Assets/ceo.webp" alt="">
+                            <h4>Stephen Spiegel <br> CEO, <span>Crew hu</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
