@@ -209,6 +209,7 @@ section.home .first {
     align-items: center;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 
 }
 
