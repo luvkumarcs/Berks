@@ -46,6 +46,11 @@ var tl = gsap.timeline();
     })
 
 
+    gsap.to("section.home .first img", {
+        scale:1.2,
+        duration: 5,
+
+    })
 
 gsap.from(" section.home .first h2", {
     opacity: 0,
@@ -61,19 +66,6 @@ gsap.from(" section.home .first .sales", {
     y: 200,
     stagger: 0.3
 })
-// gsap.from("section.home .second #gen",{
-//     // scale:0.1,
-//     // rotate:360,
-//     // duration:5
-//     x:-100,
-//     scrollTrigger:{
-//         trigger:" section.home.second #gen",
-//         scroller:"body",
-//         markers:true,
-//         start:"top 20%",
-//         end:"bottom 10%",
-//         // scrub:5,
-//         scrub:true
 
-//     }
-// })
+
+
