@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .head {
+            width: 100%;
+            height: 15vh;
+            text-align: center;
+            font-size: 3vw;
+            /* font-weight: 600; */
+            margin: 3vw 0;
+            background-color: #050978;
+            margin-top: 13vh;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section.carrier {
+            /* background-color: red; */
+            height: 205vh;
+            margin-top: -3vw;
+        }
+
+        section.carrier .client {
+            width: 100%;
+            height: 32%;
+            /* background-color: #1791FF; */
+            display: flex;
+            justify-content: center;
+            column-gap: 2vw;
+            align-items: center;
+        }
+
+        section.carrier .client .card {
+            width: 24%;
+            height: 99%;
+            /* background-color: white; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 0.5vw;
+            padding: 0vw 2vw;
+            transition: all 0.3s ease;
+            margin-top: 1vw;
+        }
+
+        section.carrier .client .card:hover {
+            box-shadow: 0 0 10px #E2B842;
+        }
+
+        section.carrier .client .card img {
+            width: 8vw;
+            height: 8vw;
+            border-radius: 50%;
+            /* background-color: red; */
+        }
+
+        section.carrier .client .card h3 {
+            font-size: 1.6vw;
+            margin-top: -1.8vw;
+            font-weight: 500;
+            font-family: work;
+            color: #050978;
+        }
+
+        section.carrier .client .card h4 {
+            font-size: 1.2vw;
+            font-weight: 500;
+            text-align: center;
+            line-height: 4vh;
+            color: #E2B842;
+            font-family: archivo;
+        }
+
+        section.carrier .client .card p {
+            font-size: 1vw;
+            line-height: 3vh;
+            font-weight: 530;
+            font-family: roboto;
+            color: #293241;
+        }
+
+        footer {
+            width: 100%;
+            height: 8vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5vw;
+        }
+
+        @media (max-width:600px) {
+            section.carrier .client {
+                height: 60%;
+                flex-direction: column;
+                margin-top: 6vw;
+                justify-content: space-evenly;
+                row-gap: 5vw;
+            }
+
+            .head {
+                font-size: 6vw;
+                height: 12vh;
+            }
+
+            section.carrier {
+                height: 300vh;
+                /* background-color: red; */
+            }
+            section.carrier h2 {
+                font-size: 7.5vw;
+                color: #293241;
+                /* margin-top: -12vw; */
+                text-align: center;
+            }
+
+            section.carrier .component {
+                /* column-gap: 9vw; */
+                height:12%;
+                /* margin-top: -30vw; */
+                /* margin-top: -3vw; */
+            }
+
+            section.carrier .component .photo {
+                width: 20vw;
+                height: 20vw;
+                display: none;
+            }
+
+            section.carrier .component .para {
+                width: 80%;
+                padding: 0 5vw;
+            }
+
+            section.carrier .component .para h3 {
+                font-size: 6vw;
+                text-align: center;
+            }
+
+            section.carrier .component .para p {
+                font-size: 4.3vw;
+                line-height: 3.7vh;
+                text-align: center;
+                margin-top: 2vw;
+
+            }
+
+
+            section.carrier .client .card {
+                width: 85%;
+                /* height: 20%; */
+                box-shadow: 0 0 8px #EFAD4E;
+                background-color: white;
+                /* border: 1px solid black; */
+                padding: 0vw 8vw;
+                border-radius: 5vw;
+
+            }
+
+            section.carrier .client .card img {
+                width: 29vw;
+                height: 29vw;
+            }
+
+            section.carrier .client .card h3 {
+                font-size: 7vw;
+            }
+
+            section.carrier .client .card h4 {
+                font-size: 6vw;
+                font-weight: 300;
+                line-height: 5vh;
+            }
+
+            section.carrier .client .card p {
+                font-size: 5vw;
+                line-height: 4vh;
+                font-weight: 450;
+                text-align: center;
+            }
+
+            footer {
+                font-size: 3.5vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-site">
+        <button class="hamberger">
+            <img src="./Assets/hamberger.png" alt="">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="./Assets/times.svg" alt=""></button>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <hr>
+                <li><a href="./about.html">About</a></li>
+                <hr>
+                <li><a href="./career.html">Careers</a></li>
+                <hr>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <hr>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
+            </div>
+            <div class="item">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./career.html">Careers</a>
+                <button><a href="./contact.html"><i class="fa-regular fa-comment"></i> Contact Us</a></button>
+            </div>
+        </nav>
+
+        <div class="head">
+            Why Choose Us
+        </div>
+
+        <section id="careers" class="carrier">
+            <h2>More Sales. Less Hassle.</h2>
+            <div class="component">
+                <div class="photo">
+                    <img src="./Assets/unique.webp" alt="">
+                </div>
+                <div class="para">
+                    <h3>Uniquely Qualified Appointments</h3>
+                    <p>Our conversation-based sales methodology delivers exceptionally qualified opportunities our
+                        competitors can't.</p>
+                </div>
+            </div>
+            <div class="component">
+                <div id="component" class="para">
+                    <h3>Ambassadors for Your Brand</h3>
+                    <p>Your outsourced sales team should look and sound like your bussiness. That's why we invest more
+                        in
+                        training that any other firm in the industry.</p>
+                </div>
+                <div class="photo">
+                    <img src="./Assets/brand.webp" alt="">
+                </div>
+            </div>
+            <div class="component">
+                <div class="photo">
+                    <img src="./Assets/fit.webp" alt="">
+                </div>
+                <div class="para">
+                    <h3>Fit-to-Purpose Sales Programs</h3>
+                    <p>From recuriting to CRM integration, we build programs that serve your goals, not the other way
+                        around.</p>
+                </div>
+            </div>
+
+            <h2>Our Clients Love Us</h2>
+            <div class="client">
+                <div class="card">
+                    <img src="./Assets/chris.webp" alt="">
+                    <h3>Chris larson</h3>
+                    <h4>Sales Director <br> Clean Energy</h4>
+                    <p>"Before them, we used to book an average of 16 meetings per month, now we are averaging 83
+                        meetings
+                        per month."</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/ken.webp" alt="">
+                    <h3>Ken Novak</h3>
+                    <h4>Global Director <br>Parker Hannifin</h4>
+                    <p>"They not only have a best-in-class process but best-in-class people. They are a strong
+                        recommend."
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/dave.webp" alt="">
+                    <h3>Dave Lemont</h3>
+                    <h4>CEO <br> Kuebix</h4>
+                    <p>"Hiring Sales Roads enabled us to exceed our conversion goals for paid users. They have become an
+                        integral part of our go-to-market strategy."</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Copyright © 2024. Design and Developed By Nevtrino.
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
