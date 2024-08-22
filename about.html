@@ -29,10 +29,15 @@
 
         section.about {
             width: 100%;
-            height: 200vh;
+            height: 190vh;
+            padding: 0;
             /* background-color:red; */
             margin-top: -6vh;
 
+        }
+
+        section.about p {
+            padding: 0 5vw;
         }
 
         section.about .grow {
@@ -197,30 +202,17 @@
             font-family: work;
         }
 
-        /* section.about .swiper-wrapper {
-            width: 90%;
-            height: 12.586vh;
-            margin-top: 1.5vw;
-            background-color: red;
+
+
+        section.contact {
+            height: 140vh;
         }
 
-        section.about .swiper-wrapper .swiper-slide {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        } */
-
-        section.contact{
-            height:140vh;
-        }
-
-        section.contact .connect{
+        section.contact .connect {
             height: 45%;
         }
 
-       
+
 
         @media (max-width:600px) {
             .head {
@@ -230,13 +222,13 @@
 
             section.about {
                 margin-top: 0;
-                height: 400vh;
+                height: 420vh;
                 /* background-color: red; */
 
             }
 
             section.about .grow {
-                height: 100vh;
+                height: 110vh;
                 flex-direction: column-reverse;
             }
 
@@ -304,7 +296,102 @@
                 font-size: 4.5vw;
             }
 
-           
+
+            section.contact {
+                /* background-color: red; */
+                height: 200vh;
+            }
+
+            section.contact .connect {
+                height: 55%;
+                /* background-color: #050978; */
+                flex-direction: column;
+                margin-top: 0vw;
+                /* justify-content: center; */
+            }
+
+            section.contact .connect .quote {
+                width: 80%;
+                height: 40%;
+                row-gap: 0.2vh;
+            }
+
+            section.contact .connect .quote h6 {
+                font-size: 4vw;
+                /* text-align: center; */
+                margin-left: 19vw;
+            }
+
+            section.contact .connect .quote h3 {
+                font-size: 9vw;
+            }
+
+            section.contact .connect .quote p {
+                font-size: 5vw;
+                line-height: 4vh;
+                text-align: center;
+            }
+
+            section.contact .connect .form {
+                width: 80%;
+                height: 58%;
+            }
+
+            section.contact .connect .form form input {
+                height: 5vh;
+                font-size: 2vh;
+            }
+
+            section.contact .connect .form form .phone,
+            .company {
+                height: 5vh;
+            }
+
+            section.contact .connect .form form p {
+                font-size: 3.7vw;
+                line-height: 3vh;
+            }
+
+            section.contact .connect .form form button {
+                height: 6vh;
+                font-size: 4vw;
+                border-radius: 4vw;
+            }
+
+            section.contact h3 {
+                font-size: 8vw;
+                text-align: center;
+            }
+
+            section.contact p {
+                font-size: 4vw;
+                text-align: center;
+
+            }
+
+            section.contact .support {
+                flex-direction: column;
+                height: 40%;
+                /* background-color: green; */
+                
+            }
+
+            section.contact .support .para {
+                width: 90%;
+                align-items: center;
+            }
+
+            section.contact .support .para h5 {
+                font-size: 6.5vw;
+                text-align: center;
+            }
+
+            section.contact .support .para p {
+                font-size: 4.5vw;
+                line-height: 3.5vh;
+            }
+
+
         }
     </style>
 </head>
@@ -388,29 +475,6 @@
                 <br><br>
             </p>
 
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./Assets/affinity.webp" alt="">
-                        <img src="./Assets/aflac.webp" alt="">
-                        <img src="./Assets/ccab.webp" alt="">
-                        <img src="./Assets/hess.webp" alt="">
-                        <img src="./Assets/high.webp" alt="">
-                        <img src="./Assets/horizon.webp" alt="">
-                        <img src="./Assets/hp.webp" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./Assets/txu.webp" alt="">
-                        <img src="./Assets/bermuda.webp" alt="">
-                        <img src="./Assets/ijet.webp" alt="">
-                        <img src="./Assets/solomon.webp" alt="">
-                        <img src="./Assets/agile.webp" alt="">
-                        <img src="./Assets/sprint.webp" alt="">
-                        <img src="./Assets/horizon.webp" alt="">
-                    </div>
-                </div>
-
-            </div>
 
             <div class="grow">
                 <div class="left">
@@ -443,12 +507,13 @@
         </section>
 
         <section id="contact" class="contact">
-        
+
             <div class="connect">
                 <div class="quote">
                     <h6>REQUEST A QUOTE</h6>
                     <h3>Ready to Grow? </h3>
-                    <p>A lack of new business opportunities shouldn't create unnecessary stress. We'll create opportunities,
+                    <p>A lack of new business opportunities shouldn't create unnecessary stress. We'll create
+                        opportunities,
                         your sales team close deals.</p>
                 </div>
                 <div class="form">
@@ -464,7 +529,8 @@
                             <input placeholder="Company" type="text">
                             <input placeholder="Website" type="text">
                         </div>
-                        <p>We use your information to contact you about our services and revelent content in line with our
+                        <p>We use your information to contact you about our services and revelent content in line with
+                            our
                             Privacy Policy. You may opt at any time.</p>
                         <button>LET'S TALK</button>
                     </form>
@@ -475,17 +541,20 @@
             <div class="support">
                 <div class="para">
                     <h5>Amazing Support</h5>
-                    <p>Our technical team is here to help you build an awesome website. We usually answer support issues in
+                    <p>Our technical team is here to help you build an awesome website. We usually answer support issues
+                        in
                         less than 1 bussiness day.</p>
                 </div>
                 <div class="para">
                     <h5>Constant Updates</h5>
-                    <p>We're constantly updating Mesmerize to ensure compatibility with the latest wordpress version. We're
+                    <p>We're constantly updating Mesmerize to ensure compatibility with the latest wordpress version.
+                        We're
                         also working to add new, cool features.</p>
                 </div>
                 <div class="para">
                     <h5>14 Days Money back Guarantee</h5>
-                    <p>Your satisfaction is our main goal. If you're not happy with Mesmerize for any reason, we'll refund
+                    <p>Your satisfaction is our main goal. If you're not happy with Mesmerize for any reason, we'll
+                        refund
                         your purchase. No questions asked.</p>
                 </div>
             </div>
@@ -495,7 +564,8 @@
             <div class="up">
                 <div class="first">
                     <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
-                    <p>Distinctively exploit optimal aligments for intuitive bandwidth. Quickly coordinate bussiness through revolutionary.</p>
+                    <p>Distinctively exploit optimal aligments for intuitive bandwidth. Quickly coordinate bussiness
+                        through revolutionary.</p>
                 </div>
                 <div class="link">
                     <h4>Quick Links</h4>
@@ -517,19 +587,19 @@
                     <h4>Follow Us</h4>
                     <div class="icon">
                         <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                       <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-                       <a href="#">   <i class="fa-solid fa-envelope-open-text"></i></a>
+                        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"> <i class="fa-solid fa-envelope-open-text"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
             <div class="down">
                 <p> Copyright © 2024. Design and Developed By <Span>Nevtrino</Span></p>
-               <a href="#contact">Contact Us</a>
+                <a href="#contact">Contact Us</a>
             </div>
         </footer>
 
-      
+
     </div>
 
 
