@@ -29,7 +29,7 @@
 
         section.about {
             width: 100%;
-            height: 180vh;
+            height: 200vh;
             /* background-color:red; */
             margin-top: -6vh;
 
@@ -197,16 +197,30 @@
             font-family: work;
         }
 
-        footer {
-            width: 100%;
-            height: 8vh;
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5vw;
+        /* section.about .swiper-wrapper {
+            width: 90%;
+            height: 12.586vh;
+            margin-top: 1.5vw;
+            background-color: red;
         }
+
+        section.about .swiper-wrapper .swiper-slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        } */
+
+        section.contact{
+            height:140vh;
+        }
+
+        section.contact .connect{
+            height: 45%;
+        }
+
+       
 
         @media (max-width:600px) {
             .head {
@@ -216,7 +230,7 @@
 
             section.about {
                 margin-top: 0;
-                height:400vh;
+                height: 400vh;
                 /* background-color: red; */
 
             }
@@ -290,9 +304,7 @@
                 font-size: 4.5vw;
             }
 
-            footer{
-                font-size: 3.5vw;
-            }
+           
         }
     </style>
 </head>
@@ -376,6 +388,30 @@
                 <br><br>
             </p>
 
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Assets/affinity.webp" alt="">
+                        <img src="./Assets/aflac.webp" alt="">
+                        <img src="./Assets/ccab.webp" alt="">
+                        <img src="./Assets/hess.webp" alt="">
+                        <img src="./Assets/high.webp" alt="">
+                        <img src="./Assets/horizon.webp" alt="">
+                        <img src="./Assets/hp.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/txu.webp" alt="">
+                        <img src="./Assets/bermuda.webp" alt="">
+                        <img src="./Assets/ijet.webp" alt="">
+                        <img src="./Assets/solomon.webp" alt="">
+                        <img src="./Assets/agile.webp" alt="">
+                        <img src="./Assets/sprint.webp" alt="">
+                        <img src="./Assets/horizon.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+
             <div class="grow">
                 <div class="left">
                     <h2>Ready to Grow?</h2>
@@ -406,9 +442,94 @@
 
         </section>
 
+        <section id="contact" class="contact">
+        
+            <div class="connect">
+                <div class="quote">
+                    <h6>REQUEST A QUOTE</h6>
+                    <h3>Ready to Grow? </h3>
+                    <p>A lack of new business opportunities shouldn't create unnecessary stress. We'll create opportunities,
+                        your sales team close deals.</p>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <input placeholder="First Name" type="text">
+                        <input placeholder="Last Name" type="text">
+                        <input placeholder="Email" type="email">
+                        <div class="phone">
+                            <input placeholder="Phone" type="number">
+                            <input id="extension" placeholder="Extension" type="text">
+                        </div>
+                        <div class="company">
+                            <input placeholder="Company" type="text">
+                            <input placeholder="Website" type="text">
+                        </div>
+                        <p>We use your information to contact you about our services and revelent content in line with our
+                            Privacy Policy. You may opt at any time.</p>
+                        <button>LET'S TALK</button>
+                    </form>
+                </div>
+            </div>
+            <h3>Our Awesome Support Team</h3>
+            <p>It's not just the theme- It's also the team</p>
+            <div class="support">
+                <div class="para">
+                    <h5>Amazing Support</h5>
+                    <p>Our technical team is here to help you build an awesome website. We usually answer support issues in
+                        less than 1 bussiness day.</p>
+                </div>
+                <div class="para">
+                    <h5>Constant Updates</h5>
+                    <p>We're constantly updating Mesmerize to ensure compatibility with the latest wordpress version. We're
+                        also working to add new, cool features.</p>
+                </div>
+                <div class="para">
+                    <h5>14 Days Money back Guarantee</h5>
+                    <p>Your satisfaction is our main goal. If you're not happy with Mesmerize for any reason, we'll refund
+                        your purchase. No questions asked.</p>
+                </div>
+            </div>
+        </section>
+
         <footer>
-            Copyright © 2024. Design and Developed By Nevtrino.
+            <div class="up">
+                <div class="first">
+                    <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
+                    <p>Distinctively exploit optimal aligments for intuitive bandwidth. Quickly coordinate bussiness through revolutionary.</p>
+                </div>
+                <div class="link">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="#careers">carrier</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h4>Subscribe</h4>
+                    <div class="form">
+                        <form action="">
+                            <input placeholder="Enter your email" type="email">
+                            <button><i class="fa-solid fa-play"></i></button>
+                        </form>
+                    </div>
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                       <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                       <a href="#">   <i class="fa-solid fa-envelope-open-text"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="down">
+                <p> Copyright © 2024. Design and Developed By <Span>Nevtrino</Span></p>
+               <a href="#contact">Contact Us</a>
+            </div>
         </footer>
+
+      
     </div>
 
 
