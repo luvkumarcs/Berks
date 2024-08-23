@@ -14,9 +14,9 @@
     <style>
         .head {
             width: 100%;
-            height: 15vh;
+            height: 14vh;
             text-align: center;
-            font-size: 3vw;
+            font-size: 2.5vw;
             /* font-weight: 600; */
             margin: 3vw 0;
             background-color: #050978;
@@ -29,174 +29,405 @@
 
         section.carrier {
             /* background-color: red; */
-            height: 205vh;
+            height: 300vh;
             margin-top: -3vw;
         }
 
-        section.carrier .client {
+        section.carrier .first {
             width: 100%;
-            height: 32%;
-            /* background-color: #1791FF; */
+            height: 25%;
+            background-color: white;
             display: flex;
             justify-content: center;
-            column-gap: 2vw;
             align-items: center;
+            column-gap: 1vw;
+
         }
 
-        section.carrier .client .card {
-            width: 24%;
-            height: 99%;
-            /* background-color: white; */
+        section.carrier .first .photo {
+            width: 40%;
+            height: 60%;
+            /* background-color:white; */
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2vw;
+            border-right: 2.5vw solid #050978;
+        }
+
+        section.carrier .first .photo img {
+            width: 40%;
+            height: 100%;
+        }
+
+        section.carrier .first .para {
+            width: 40%;
+            height: 60%;
+            /* background-color:purple; */
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            padding: 1.5vw 1vw;
+            row-gap: 0.8vw;
+        }
+
+        section.carrier .first .para h2 {
+            font-size: 2vw;
+            margin-top: -1.3vw;
+            color: #170045;
+        }
+
+        section.carrier .first .para p {
+            font-size: 1.2vw;
+            line-height: 3.5vh;
+
+        }
+
+
+
+        section.carrier .second {
+            width: 100%;
+            height: 21%;
+            background-color: #050978;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2vw;
+        }
+
+        section.carrier .second .left {
+            width: 40%;
+            height: 100%;
+            /* background-color: red; */
+            padding: 1.5vw 2vw;
+
+        }
+
+        section.carrier .second .left h3 {
+            font-size: 1.8vw;
+            color: white;
+        }
+
+        section.carrier .second .left ul {
+            margin-top: 2vw;
+        }
+
+        section.carrier .second .left ul li {
+            font-size: 1.3vw;
+            line-height: 4.7vh;
+            color: white;
+        }
+
+
+        section.carrier .second .right {
+            width: 40%;
+            height: 100%;
+            /* background-color: green; */
+            padding: 1vw 2vw;
+
+        }
+
+        section.carrier .second .right h3 {
+            font-size: 1.8vw;
+            color: white;
+        }
+
+        section.carrier .second .right h4 {
+            font-size: 1.6vw;
+            color: #1791FF;
+            margin-top: 1.5vw;
+        }
+
+        section.carrier .second .right p {
+            font-size: 1.3vw;
+            margin-top: 0.3vw;
+            color: white;
+            line-height: 4vh;
+        }
+
+        section.carrier .third {
+            width: 100%;
+            height: 15%;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: space-around;
             align-items: center;
             flex-direction: column;
-            border-radius: 0.5vw;
-            padding: 0vw 2vw;
-            transition: all 0.3s ease;
-            margin-top: 1vw;
+            padding: 3vw 10vw;
+
         }
 
-        section.carrier .client .card:hover {
-            box-shadow: 0 0 10px #E2B842;
-        }
-
-        section.carrier .client .card img {
-            width: 8vw;
-            height: 8vw;
-            border-radius: 50%;
-            /* background-color: red; */
-        }
-
-        section.carrier .client .card h3 {
-            font-size: 1.6vw;
-            margin-top: -1.8vw;
-            font-weight: 500;
-            font-family: work;
+        section.carrier .third h3 {
+            font-size: 1.8vw;
             color: #050978;
+            text-align: center;
         }
 
-        section.carrier .client .card h4 {
-            font-size: 1.2vw;
-            font-weight: 500;
+        section.carrier .third p {
+            font-size: 1.3vw;
             text-align: center;
             line-height: 4vh;
-            color: #E2B842;
-            font-family: archivo;
         }
 
-        section.carrier .client .card p {
-            font-size: 1vw;
-            line-height: 3vh;
-            font-weight: 530;
-            font-family: roboto;
-            color: #293241;
-        }
-
-        footer {
-            width: 100%;
-            height: 8vh;
-            background-color: black;
+        section.carrier .third button {
+            width: 10%;
+            height: 5vh;
+            background-color: #050978;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5vw;
+            font-size: 1.3vw;
+
         }
+
+        section.carrier .fourth {
+            width: 100%;
+            height: 39%;
+            /* background-color: purple; */
+            padding: 3vw 15vw;
+        }
+
+        section.carrier .fourth h4 {
+            font-size: 1.4vw;
+        }
+
+        section.carrier .fourth form {
+            margin-top: 2vw;
+        }
+
+        section.carrier .fourth form label {
+            font-size: 1.1vw;
+
+        }
+
+        section.carrier .fourth form input {
+            width: 100%;
+            height: 5.5vh;
+            margin-top: 0.6vw;
+            font-size: 1.1vw;
+            padding: 0 1vw;
+            /* border-radius: 2vw; */
+            border: none;
+            border-bottom: 1px solid black;
+
+        }
+
+        section.carrier .fourth form button {
+            width: 12%;
+            height: 6vh;
+            background-color: #050978;
+            color: white;
+            font-size: 1.3vw;
+            /* margin-top: 1vw; */
+            margin-left: 55vw;
+        }
+
+
 
         @media (max-width:600px) {
-            section.carrier .client {
-                height: 60%;
-                flex-direction: column;
-                margin-top: 6vw;
-                justify-content: space-evenly;
-                row-gap: 5vw;
-            }
-
             .head {
                 font-size: 6vw;
                 height: 12vh;
             }
 
             section.carrier {
-                height: 300vh;
                 /* background-color: red; */
-            }
-            section.carrier h2 {
-                font-size: 7.5vw;
-                color: #293241;
-                /* margin-top: -12vw; */
-                text-align: center;
+                height: 450vh;
+                margin-top: -3vw;
             }
 
-            section.carrier .component {
-                /* column-gap: 9vw; */
-                height:12%;
-                /* margin-top: -30vw; */
-                /* margin-top: -3vw; */
+            section.carrier .first {
+                /* width: 100%; */
+                height: 35%;
+                /* background-color: white; */
+                /* display: flex; */
+                /* justify-content: center; */
+                /* align-items: center; */
+                flex-direction: column;
+                /* column-gap: 1vw; */
+
             }
 
-            section.carrier .component .photo {
-                width: 20vw;
-                height: 20vw;
-                display: none;
+            section.carrier .first .photo {
+                width: 100%;
+                height: 60%;
+                /* background-color:white; */
+                /* display: flex; */
+                justify-content: space-evenly;
+                /* align-items: center; */
+                flex-direction: column;
+                /* column-gap: 2vw; */
+                border-right: none
             }
 
-            section.carrier .component .para {
-                width: 80%;
-                padding: 0 5vw;
+            section.carrier .first .photo img {
+                width: 70%;
+                height: 40%;
+                
             }
 
-            section.carrier .component .para h3 {
+            section.carrier .first .para {
+                width: 100%;
+                height: 40%;
+                /* background-color:purple; */
+                /* display: flex; */
+                /* justify-content: start; */
+                /* align-items: start; */
+                /* flex-direction: column; */
+                padding: 1.5vw 5vw;
+                /* row-gap: 0.8vw; */
+            }
+
+            section.carrier .first .para h2 {
+                font-size: 6.5vw;
+                /* margin-top: -1.3vw; */
+                /* color: #170045; */
+            }
+
+            section.carrier .first .para p {
+                font-size: 4vw;
+                line-height: 3.5vh;
+
+            }
+
+
+
+            section.carrier .second {
+                /* width: 100%; */
+                height: 28%;
+                /* background-color: #050978; */
+                /* display: flex; */
+                justify-content: space-around;
+                /* align-items: center; */
+                flex-direction: column;
+                column-gap: 2vw;
+            }
+
+            section.carrier .second .left {
+                width: 90%;
+                height: 50%;
+                /* background-color: red; */
+                padding: 5vh 5vw;
+
+            }
+
+            section.carrier .second .left h3 {
                 font-size: 6vw;
-                text-align: center;
+                /* color: white; */
             }
 
-            section.carrier .component .para p {
-                font-size: 4.3vw;
-                line-height: 3.7vh;
-                text-align: center;
+            /* section.carrier .second .left ul {
                 margin-top: 2vw;
+            } */
 
-            }
-
-
-            section.carrier .client .card {
-                width: 85%;
-                /* height: 20%; */
-                box-shadow: 0 0 8px #EFAD4E;
-                background-color: white;
-                /* border: 1px solid black; */
-                padding: 0vw 8vw;
-                border-radius: 5vw;
-
-            }
-
-            section.carrier .client .card img {
-                width: 29vw;
-                height: 29vw;
-            }
-
-            section.carrier .client .card h3 {
-                font-size: 7vw;
-            }
-
-            section.carrier .client .card h4 {
-                font-size: 6vw;
-                font-weight: 300;
-                line-height: 5vh;
-            }
-
-            section.carrier .client .card p {
-                font-size: 5vw;
-                line-height: 4vh;
-                font-weight: 450;
-                text-align: center;
-            }
-
-            footer {
+            section.carrier .second .left ul li {
                 font-size: 3.5vw;
+                /* line-height: 4.7vh; */
+                /* color: white; */
             }
+
+
+            section.carrier .second .right {
+                width: 90%;
+                height: 49.5%;
+                /* background-color: green; */
+                padding: 1vw 2vw;
+
+            }
+
+            section.carrier .second .right h3 {
+                font-size: 6vw;
+                /* color: white; */
+            }
+
+            section.carrier .second .right h4 {
+                font-size: 5vw;
+                /* color: #1791FF; */
+                margin-top: 2.5vh;
+            }
+
+            section.carrier .second .right p {
+                font-size: 3.5vw;
+                margin-top: 2vh;
+                /* color: white; */
+                line-height: 3.5vh;
+            }
+
+            section.carrier .third {
+                /* width: 100%; */
+                height: 12%;
+                /* background-color: yellow; */
+                /* display: flex; */
+                /* justify-content: space-around; */
+                /* align-items: center; */
+                /* flex-direction: column; */
+                padding: 3vh 10vw;
+
+            }
+
+            section.carrier .third h3 {
+                font-size: 6vw;
+                /* color: #050978; */
+                /* text-align: center; */
+            }
+
+            section.carrier .third p {
+                font-size: 3.2vw;
+                /* text-align: center; */
+                line-height: 3.5vh;
+            }
+
+            section.carrier .third button {
+                width: 30%;
+                height: 6vh;
+                background-color: #050978;
+                color: white;
+                font-size: 3vw;
+
+            }
+
+            section.carrier .fourth {
+                /* width: 100%; */
+                height: 25%;
+                /* background-color: purple; */
+                padding: 3vh 15vw;
+            }
+
+            section.carrier .fourth h4 {
+                font-size: 4vw;
+            }
+
+            section.carrier .fourth form {
+                margin-top: 2.5vh;
+            }
+
+            section.carrier .fourth form label {
+                font-size: 4vw;
+
+            }
+
+            section.carrier .fourth form input {
+                /* width: 100%; */
+                /* height: 5.5vh; */
+                margin-top: 1vh;
+                font-size: 3vw;
+                padding: 0 2vw;
+                /* border-radius: 2vw; */
+                /* border: none; */
+                /* border-bottom: 1px solid black; */
+
+            }
+
+            section.carrier .fourth form button {
+                width: 100%;
+                height: 6vh;
+                /* background-color: #050978; */
+                /* color: white; */
+                font-size: 5vw;
+                /* margin-top: 1vw; */
+                margin-left: 0vw;
+            }
+
+
         }
     </style>
 </head>
@@ -237,71 +468,135 @@
             Why Choose Us
         </div>
 
-        <section id="careers" class="carrier">
-            <h2>More Sales. Less Hassle.</h2>
-            <div class="component">
+        <section class="carrier">
+            <div class="first">
                 <div class="photo">
-                    <img src="./Assets/unique.webp" alt="">
+                    <img src="./Assets/career-1.webp" alt="">
+                    <img src="./Assets/career-2.webp" alt="">
                 </div>
                 <div class="para">
-                    <h3>Uniquely Qualified Appointments</h3>
-                    <p>Our conversation-based sales methodology delivers exceptionally qualified opportunities our
-                        competitors can't.</p>
-                </div>
-            </div>
-            <div class="component">
-                <div id="component" class="para">
-                    <h3>Ambassadors for Your Brand</h3>
-                    <p>Your outsourced sales team should look and sound like your bussiness. That's why we invest more
-                        in
-                        training that any other firm in the industry.</p>
-                </div>
-                <div class="photo">
-                    <img src="./Assets/brand.webp" alt="">
-                </div>
-            </div>
-            <div class="component">
-                <div class="photo">
-                    <img src="./Assets/fit.webp" alt="">
-                </div>
-                <div class="para">
-                    <h3>Fit-to-Purpose Sales Programs</h3>
-                    <p>From recuriting to CRM integration, we build programs that serve your goals, not the other way
-                        around.</p>
-                </div>
-            </div>
-
-            <h2>Our Clients Love Us</h2>
-            <div class="client">
-                <div class="card">
-                    <img src="./Assets/chris.webp" alt="">
-                    <h3>Chris larson</h3>
-                    <h4>Sales Director <br> Clean Energy</h4>
-                    <p>"Before them, we used to book an average of 16 meetings per month, now we are averaging 83
-                        meetings
-                        per month."</p>
-                </div>
-                <div class="card">
-                    <img src="./Assets/ken.webp" alt="">
-                    <h3>Ken Novak</h3>
-                    <h4>Global Director <br>Parker Hannifin</h4>
-                    <p>"They not only have a best-in-class process but best-in-class people. They are a strong
-                        recommend."
+                    <h2>Join our team</h2>
+                    <p>
+                        We are seeking experienced sales and business development professionals. Many of our clients
+                        have complex propositions and large sales cycles which require commitment and determination.
+                        <br><br>
+                        With extensive potential for career development and personal growth, this is an exciting and
+                        rewarding sector to work in. The variety of clients and challenges across SaaS, cyber, IT
+                        services, and technology to work with keeps our employees engaged and motivated. <br><br>
+                        The range of customers and industries we work within provides our employees with continual
+                        learning, development and experience.
                     </p>
                 </div>
-                <div class="card">
-                    <img src="./Assets/dave.webp" alt="">
-                    <h3>Dave Lemont</h3>
-                    <h4>CEO <br> Kuebix</h4>
-                    <p>"Hiring Sales Roads enabled us to exceed our conversion goals for paid users. They have become an
-                        integral part of our go-to-market strategy."</p>
+            </div>
+            <div class="second">
+                <div class="left">
+                    <h3>What is on offer at Excelerate360?</h3>
+                    <ul>
+                        <li>21 Annual leave days in year 1, rising to 25 days</li>
+                        <li>Expert training & support</li>
+                        <li>Christmas closure</li>
+                        <li>Fun team environment</li>
+                        <li>Benefit schemes</li>
+                        <li>Remote working optional</li>
+                        <li>Advancement opportunities</li>
+                        <li>Personal & team incentives</li>
+                    </ul>
                 </div>
+                <div class="right">
+                    <h3>Our Current Listings</h3>
+                    <h4>Business Development Executive roles</h4>
+                    <p>The role of a Business Development Executive (BDE) at Excelerate360 is to help our clients
+                        develop a sales pipeline and increase their market presence through direct (1-2-1) outbound
+                        sales activity, including cold calling, emails and new business prospecting activity.
+                    </p>
+                    <h4>Inside Sales Executive roles</h4>
+                    <p>
+                        The role of an Inside Sales Executive at Excelerate360 is to create a sales pipeline with
+                        potential customers through emails, telephone calls, LinkedIn messages and to drive the sales
+                        process through to close.
+                    </p>
+                </div>
+            </div>
+            <div class="third">
+                <h3>Interested in applying?</h3>
+                <p>The role of an Inside Sales Executive at Excelerate360 is to create a sales pipeline with potential
+                    customers through emails, telephone calls, LinkedIn messages and to drive the sales process through
+                    to close.
+                    The role of an Inside Sales Executive at Excelerate360 is to create a sales pipeline with potential
+                    customers through emails, telephone calls, LinkedIn messages and to drive the sales process through
+                    to close.
+                </p>
+                <button>Apply Here</button>
+            </div>
+            <div class="fourth">
+                <h4>Job Type: Full-time</h4>
+                <form action="">
+                    <label for="fname">First Name*</label> <br>
+                    <input placeholder="Enter Your First Name" id="fname" required type="text"> <br><br>
+                    <label for="lname">Last Name*</label> <br>
+                    <input placeholder="Enter Your Last Name" id="lname" required type="text"> <br><br>
+                    <label for="email">Email*</label> <br>
+                    <input placeholder="Enter Your Email" id="email" required type="email"> <br><br>
+                    <label for="phone">Phone*</label> <br>
+                    <input placeholder="Enter Your Mobile Number" id="phone" required type="tel"> <br><br>
+                    <label for="position">Position*</label> <br>
+                    <input placeholder="Which Position are you applying for" list="position"> <br><br>
+                    <datalist id="position">
+                        <option value="Frontend developer">Frontend developer</option>
+                        <option value="Backend developer">Backend developer</option>
+                        <option value="Fullstack developer">Fullstack developer</option>
+                    </datalist>
+                    <label for="date">Date*</label> <br>
+                    <input id="date" required type="date"> <br><br>
+                    <label for="resume">Resume*</label> <br>
+                    <input id="resume" required type="file"><br><br>
+                    <p>Max file size 10mb</p><br>
+                    <button>Submit</button>
+
+                </form>
             </div>
         </section>
 
+
         <footer>
-            Copyright © 2024. Design and Developed By Nevtrino.
+            <div class="up">
+                <div class="first">
+                    <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
+                    <p>Distinctively exploit optimal aligments for intuitive bandwidth. Quickly coordinate bussiness
+                        through revolutionary.</p>
+                </div>
+                <div class="link">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="#careers">carrier</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h4>Subscribe</h4>
+                    <div class="form">
+                        <form action="">
+                            <input placeholder="Enter your email" type="email">
+                            <button><i class="fa-solid fa-play"></i></button>
+                        </form>
+                    </div>
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"> <i class="fa-solid fa-envelope-open-text"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="down">
+                <p> Copyright © 2024. Design and Developed By <Span>Nevtrino</Span></p>
+                <a href="#contact">Contact Us</a>
+            </div>
         </footer>
+
     </div>
 
 

@@ -28,110 +28,270 @@
         }
 
         section.contact {
-            height: 140vh;
+            height: 100vh;
             /* background-color: red; */
             display: flex;
             justify-content: space-around;
-            row-gap: 4vh;
+            /* row-gap: 4vh; */
             align-items: center;
-            flex-direction: column;
+            /* flex-direction: column; */
             margin-top: -3vw;
-            padding: 0 5vw;
+            /* padding: 0 5vw; */
         }
 
-        section.contact .connect {
-            height: 65vh;
-        }
-
-
-        section.contact h4 {
-            font-size: 2.5vw;
-            margin-top: 5vh;
-        }
-
-        section.contact .icon {
-            width: 50%;
-            height: 7vh;
+        section.contact .container {
+            width: 100%;
+            height: 85%;
             /* background-color: green; */
             display: flex;
             justify-content: center;
             align-items: center;
-            column-gap: 2.5vw;
 
         }
 
-        section.contact .icon a {
-            text-decoration: none;
-            color: black;
-            font-size: 2.5vw;
-            gap: 2vw;
-            margin-top: -2vw;
-        }
-
-        section.contact .icon a:hover {
-            color: #050978;
+        section.contact .container .left {
+            width: 60%;
+            height: 95%;
+            /* background-color: blue; */
+            padding: 0 3vw;
 
         }
 
-        section.contact .icon a:hover i {
-
-            transform: scale(1.1);
-
-        }
-
-        section.contact .icon a i {
-            column-gap: 7vw;
-        }
-
-        footer {
+        section.contact .container .left form {
             width: 100%;
-            height: 8vh;
-            background-color: black;
+            height: 100%;
+        }
+
+        section.contact .container .left form label {
+            font-size: 1.1vw;
+            margin-top: 2vw;
+        }
+
+        section.contact .container .left form input {
+            width: 100%;
+            height: 7%;
+            margin-top: 0.5vw;
+            padding: 0 1.2vw;
+            font-size: 1.2vw;
+            background-color: #F5F8FA;
+        }
+
+        section.contact .container .left form textarea {
+            width: 100%;
+            height: 9%;
+            margin-top: 1vw;
+            padding: 0 1.2vw;
+            font-size: 1.2vw;
+            background-color: #F5F8FA;
+        }
+
+        section.contact .container .left form button {
+            width: 16%;
+            height: 7%;
+            margin-top: 1.3vw;
+            font-size: 1.3vw;
+            background-color: #050978;
+            border: none;
             color: white;
+        }
+
+        section.contact .container .left form .detail {
+            width: 100%;
+            height: 60%;
+            /* background-color: orange; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section.contact .container .left form .detail div {
+            width: 48%;
+            height: 100%;
+            /* background-color: red; */
             display: flex;
             justify-content: center;
-            align-items: center;
-            font-size: 1.5vw;
+            align-items: start;
+            flex-direction: column;
+            padding: 0 0vw;
         }
+
+        section.contact .container .left form .detail div label {
+            font-size: 1.1vw;
+            margin-top: 1.5vw;
+
+
+        }
+
+        section.contact .container .left form .detail div input {
+            width: 100%;
+            height: 12%;
+            margin-top: 0.5vw;
+            padding: 0 1.2vw;
+            font-size: 1.2vw;
+            background-color: #F5F8FA;
+
+        }
+
+
+
+        section.contact .container .right {
+            width: 40%;
+            height: 95%;
+            /* background-color: yellow; */
+            padding: 4vw 5vw;
+        }
+
+        section.contact .container .right h3 {
+            font-size: 2vw;
+            margin-top: 0.5vw;
+            /* line-height: 1vh; */
+        }
+
+        section.contact .container .right p {
+            font-size: 1.2vw;
+            line-height: 4vh;
+            /* margin-top: -0.2vw; */
+
+        }
+
+
 
         @media (max-width:600px) {
 
-            section.contact{
+            section.contact {
                 height: 200vh;
                 /* background-color: red; */
                 justify-content: space-evenly;
+                flex-direction: column;
                 /* margin-top: 3vw; */
             }
 
-            section.contact .connect {
-            height: 140vh;
-            margin-top: 10vh;
-        }
-
-            .head{
+            .head {
                 font-size: 5.5vw;
                 height: 12vh;
             }
 
-            section.contact .support {
-                margin-top: 25vh;
-                row-gap: 5vh;
-                ;
+            section.contact .container {
+                width: 100%;
+                height: 85%;
+                /* background-color: green; */
+                /* display: flex; */
+                /* justify-content: center; */
+                /* align-items: center; */
+                flex-direction: column;
+
             }
 
-            section.contact h4{
-                font-size: 6vw;
-                margin-top: -5vh;
+            section.contact .container .left {
+                width: 90%;
+                height: 95%;
+                /* background-color: blue; */
+                padding: 0 3vw;
+
             }
 
-            section.contact .icon a i{
-                font-size: 6.5vw;
-                margin-top: -3vw;
+            section.contact .container .left form {
+                width: 100%;
+                height: 100%;
             }
 
-            footer{
+            section.contact .container .left form label {
+                font-size: 3.7vw;
+                margin-top: 4vw;
+            }
+
+            section.contact .container .left form input {
+                width: 100%;
+                height: 5.5vh;
+                margin-top: 4vw;
+                padding: 0 3vw;
                 font-size: 3.5vw;
+                /* background-color: #F5F8FA; */
             }
+
+            section.contact .container .left form textarea {
+                width: 100%;
+                height: 7vh;
+                margin-top: 4vw;
+                padding: 1.5vw 3vw;
+                font-size: 3.5vw;
+                /* background-color: #F5F8FA; */
+            }
+
+            section.contact .container .left form button {
+                width: 30%;
+                height: 7%;
+                margin-top: 9vw;
+                font-size: 4.5vw;
+                /* background-color: #050978; */
+                /* border: none; */
+                /* color: white; */
+            }
+
+            section.contact .container .left form .detail {
+                width: 100%;
+                height: 60%;
+                /* background-color: orange; */
+                /* display: flex; */
+                /* justify-content: space-around; */
+                /* align-items: center; */
+                flex-direction: column;
+            }
+
+            section.contact .container .left form .detail div {
+                width: 100%;
+                height: 100%;
+                /* background-color: red; */
+                /* display: flex; */
+                justify-content: space-evenly;
+                /* align-items: start; */
+                flex-direction: column;
+                padding: 0 0vw;
+            }
+
+            section.contact .container .left form .detail div label {
+                font-size: 3.7vw;
+                /* margin-top: 1.5vw; */
+
+
+            }
+
+            section.contact .container .left form .detail div input {
+                width: 100%;
+                height: 5.5vh;
+                /* margin-top: 0.5vw; */
+                /* padding: 0 3vw; */
+                font-size: 3.5vw;
+                /* background-color: #F5F8FA; */
+
+            }
+
+
+
+            section.contact .container .right {
+                width: 90%;
+                height: 50%;
+                /* background-color: yellow; */
+                /* padding: 4vw 5vw; */
+                text-align: start;
+            }
+
+            section.contact .container .right h3 {
+                font-size: 6.5vw;
+                margin-top: 4vh;
+                text-align: start;
+                /* line-height: 1vh; */
+            }
+
+            section.contact .container .right p {
+                font-size: 4vw;
+                line-height: 5vh;
+                text-align: start;
+                /* margin-top: -0.2vw; */
+
+            }
+
+
         }
     </style>
 </head>
@@ -174,71 +334,102 @@
 
 
         <section class="contact">
-
-            <div class="support">
-                <div class="para">
-                    <h5>Amazing Support</h5>
-                    <p>Our technical team is here to help you build an awesome website. We usually answer support issues
-                        in
-                        less than 1 bussiness day.</p>
-                </div>
-                <div class="para">
-                    <h5>Constant Updates</h5>
-                    <p>We're constantly updating Mesmerize to ensure compatibility with the latest wordpress version.
-                        We're
-                        also working to add new, cool features.</p>
-                </div>
-                <div class="para">
-                    <h5>14 Days Money back Guarantee</h5>
-                    <p>Your satisfaction is our main goal. If you're not happy with Mesmerize for any reason, we'll
-                        refund
-                        your purchase. No questions asked.</p>
-                </div>
-            </div>
-
-            <div class="connect">
-                <div class="quote">
-                    <h6>REQUEST A QUOTE</h6>
-                    <h3>Ready to Grow? </h3>
-                    <p>A lack of new business opportunities shouldn't create unnecessary stress. We'll create
-                        opportunities,
-                        your sales team close deals.</p>
-                </div>
-                <div class="form">
+            <h3>Let's Talk About Growing Your pipeline</h3>
+            <p>Don't want to wait? Call us now at <span>+91 98XXXXXXXX</span></p>
+            <div class="container">
+                <div class="left">
                     <form action="">
-                        <input placeholder="First Name" type="text">
-                        <input placeholder="Last Name" type="text">
-                        <input placeholder="Email" type="email">
-                        <div class="phone">
-                            <input placeholder="Phone" type="number">
-                            <input id="extension" placeholder="Extension" type="text">
+
+                        <div class="detail">
+                            <div class="left">
+                                <label for="fname">First Name*</label>
+                                <input type="text" required id="fname" name="fname">
+                                <label for="email">Email*</label>
+                                <input type="email" required name="email" id="email">
+                                <label for="company">Company*</label>
+                                <input type="text" required name="company" id="company">
+                            </div>
+                            <div class="right">
+                                <label for="lname">Last Name*</label>
+                                <input type="text" id="lname" required name="lname">
+                                <label for="phone">Phone number*</label>
+                                <input type="tel" required name="phone" id="phone>">
+                                <label for="website">Company Website</label>
+                                <input type="url" required name="website" id="website">
+                            </div>
                         </div>
-                        <div class="company">
-                            <input placeholder="Company" type="text">
-                            <input placeholder="Website" type="text">
-                        </div>
-                        <p>We use your information to contact you about our services and revelent content in line with
-                            our
-                            Privacy Policy. You may opt at any time.</p>
-                        <button>LET'S TALK</button>
+                        <label for="industry">Company Industry</label><br>
+                        <input type="text" required name="industry" id="industry"><br>
+
+                        <label for="message">Is there anything else you want to add?</label><br>
+                        <textarea placeholder="Enter Your Message" type="text" id="message"></textarea><br>
+
+                        <button>Submit</button>
+
+
                     </form>
                 </div>
+                <div class="right">
+                    <h3>Columbia, MD</h3>
+                    <p>
+                        10290 Old Columbia Rd, Suite 302 <br> Columbia, MD 21046
+                    </p>
+                    <h3>Charleston, SC</h3>
+                    <p>
+                        7301 Rivers Ave, Suite 120 <br> North Charleston, SC 29406
+                    </p>
+
+                    <p>
+                        <strong>Office:</strong> (410) 442-5600<br>
+                        <strong>Toll-Free: </strong> (866) 840-8305 <br>
+                        <strong>Fax:</strong> (410) 442-5102
+                    </p>
+                </div>
             </div>
-
-
-            <h4>Follow Us</h4>
-            <div class="icon">
-                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-                <a href="#"> <i class="fa-solid fa-envelope-open-text"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-
         </section>
 
+
         <footer>
-            Copyright © 2024. Design and Developed By Nevtrino.
+            <div class="up">
+                <div class="first">
+                    <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
+                    <p>Distinctively exploit optimal aligments for intuitive bandwidth. Quickly coordinate bussiness
+                        through revolutionary.</p>
+                </div>
+                <div class="link">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="#careers">carrier</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h4>Subscribe</h4>
+                    <div class="form">
+                        <form action="">
+                            <input placeholder="Enter your email" type="email">
+                            <button><i class="fa-solid fa-play"></i></button>
+                        </form>
+                    </div>
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"> <i class="fa-solid fa-envelope-open-text"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="down">
+                <p> Copyright © 2024. Design and Developed By <Span>Nevtrino</Span></p>
+                <a href="#contact">Contact Us</a>
+            </div>
         </footer>
+
+
+
     </div>
 
 
