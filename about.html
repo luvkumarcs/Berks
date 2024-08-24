@@ -29,197 +29,177 @@
 
         section.about {
             width: 100%;
-            height: 190vh;
+            height: 300vh;
             padding: 0;
             /* background-color:red; */
             margin-top: -6vh;
 
         }
 
+        section.about h6 {
+            font-size: 1.5vw;
+            color: #EFAD4E;
+            margin-top: 2vh;
+        }
+
+        section.about .first {
+            width: 100%;
+            height: 30%;
+            /* background-color: green; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 7vw;
+        }
+
+        section.about .first .pic {
+            width: 30%;
+            height: 80%;
+
+        }
+
+        section.about .first .pic img {
+            width: 100%;
+            height: 100%;
+        }
+
+        section.about .first .para {
+            width: 60%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            /* background-color: #EFAD4E; */
+            padding: 0 2vw;
+        }
+
+        section.about .first .para h2 {
+            font-size: 2.5vw;
+        }
+
+        section.about .first .para .line {
+            width: 8%;
+            height: 0.5vh;
+            background-color: #EFAD4E;
+            margin-top: 2vh;
+        }
+
+        section.about .first .para .material {
+            width: 100%;
+            height: 70%;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+
+
+        }
+
+        section.about .first .para .material div {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+        }
+
+        section.about .first .para .material div p {
+            font-size: 1.5vw;
+            margin-left: -3.5vw;
+            margin-top: -0.4vw;
+        }
+
+        section.about .first .para .material div .gola {
+            width: 3vw;
+            height: 3vw;
+            background-color: #EFAD4E;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section.about .first .para .material div .gola i {
+            color: #03442E;
+        }
+
         section.about p {
             padding: 0 5vw;
         }
 
-        section.about .grow {
+        section.about .photo {
             width: 100%;
-            height: 43vh;
-            background-color: #0A0889;
+            height: 25%;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0 3vw;
+        }
+
+        section.about .photo div {
+            width: 32%;
+            height: 90%;
+            /* background-color: pink ; */
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin-top: 0vw;
-
-
-        }
-
-        section.about .grow .left {
-            width: 40%;
-            height: 80%;
-            /* background-color: red; */
-            display: flex;
-            justify-content:center;
-            align-items: center;
+            align-items: start;
             flex-direction: column;
-            /* row-gap: 1vw; */
+            /* padding: 2vw 1vw; */
         }
 
-        section.about .grow .left h2 {
-            font-size: 3vw;
-            color: white;
-            font-family: work;
-            margin-top: 2.5vw;
-
-        }
-
-        section.about .grow .left p {
-            font-size: 1.3vw;
-            color: white;
-            font-family: work;
-            /* margin-top: 0; */
-        }
-
-        section.about .grow .left button {
-            width: 8vw;
-            height: 6vh;
-            border-radius: 1.5vw;
-            border: none;
-            background-color: #E2B842;
-            transition: all 0.3s ease;
-            position: relative;
+        section.about .photo div div {
+            width: 90%;
+            height: 50%;
             overflow: hidden;
-            z-index: 1;
-            margin-top: 1vw;
+            position: relative;
+            transition: all 0.5s ease;
+        }
+
+        section.about .photo div div img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease;
 
         }
 
-        section.about .grow .left button::after {
+        section.about .photo div div:hover img {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        section.about .photo div div::after {
             content: "";
             width: 100%;
             height: 100%;
-            background-color: whitesmoke;
             position: absolute;
             top: 0;
-            left: -100%;
-            transition: all 0.3s ease;
-
+            background-color: red;
+            opacity: 0.6;
+            z-index: 1;
         }
 
-        section.about .grow .left button:hover::after {
-            top: 0;
-            left: 0;
-            z-index: -1;
+        section.about .photo div .img1::after {
+            background-color: blue;
         }
 
-        section.about .grow .left button:hover {
-            background-color: white;
+        section.about .photo div .img2::after {
+            background-color: green;
         }
 
-        section.about .grow .left button:hover a {
-            color: #E2B842;
-        }
-
-        section.about .grow .left button a {
-            text-decoration: none;
-            color: #F3F4F6;
-            font-size: 1vw;
-            font-weight: 600;
-
-        }
-
-        section.about .grow .right {
-            width: 45%;
-            height: 90%;
-            /* background-color: red; */
-            display: flex;
-            justify-content: space-evenly;
-            align-items: start;
-            flex-direction: column;
-        }
-
-        section.about .grow .right .star {
-            width: 70%;
-            height: 30%;
-            /* background-color: white; */
-            display: flex;
-            justify-content: start;
-            column-gap: 0vw;
-            align-items: center;
-            border-bottom: 3px solid #F0AD4E;
-        }
-
-        section.about .grow .right .star h1 i {
-            color: #EFAD4E;
-            font-size: 1.3vw;
-        }
-
-        section.about .grow .right .star p {
-            font-size: 0.9vw;
+        section.about .photo div h3 {
+            font-size: 2.5vw;
             margin-top: 1vw;
-            color: white;
-            font-family: work;
-            /* text-align: start; */
-
         }
 
-        section.about .grow .right .content {
-            width: 80%;
-            height: 70%;
-            /* background-color: white; */
-            display: flex;
-            justify-content: space-evenly;
-            align-items: start;
-            flex-direction: column;
-
-        }
-
-        section.about .grow .right .content p {
-            font-size: 1.1vw;
-            font-weight: 550;
-            color: white;
-            font-family: work;
-            /* text-align: start; */
+        section.about .photo div p {
+            font-size: 1.3vw;
+            margin-top: 0.5vw;
+            line-height: 3vh;
             margin-left: -5vw;
-            margin-top: -0.7vw;
         }
-
-        section.about .grow .right .content .stephen {
-            width: 100%;
-            height: 35%;
-            /* background-color: red; */
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            column-gap: 1.4vw;
-            font-family: work;
-
-        }
-
-        section.about .grow .right .content .stephen img {
-            width: 5vw;
-            height: 5vw;
-            border-radius: 50%;
-
-        }
-
-        section.about .grow .right .content .stephen h4 {
-            font-size: 1.2vw;
-            font-weight: 550;
-            color: white;
-            font-family: work;
-        }
-
-
-
-
-        section.contact {
-            height: 140vh;
-        }
-
-        section.contact .connect {
-            height: 45%;
-        }
-
-
 
         @media (max-width:600px) {
             .head {
@@ -229,175 +209,186 @@
 
             section.about {
                 margin-top: 0;
-                height: 420vh;
+                height: 600vh;
                 /* background-color: red; */
 
             }
 
-            section.about .grow {
-                height: 110vh;
-                flex-direction: column-reverse;
-            }
-
-            section.about .grow .left {
-                width: 90%;
-                height: 40%;
-            
-                padding: 0 5vw;
-            }
-
-            section.about .grow .left h2 {
-                font-size: 8.5vw;
-            }
-
-            section.about .grow .left p {
-                font-size: 5vw;
-                text-align: center;
-            }
-
-            section.about .grow .left button {
-                width: 29vw;
-                height: 7vh;
-                border-radius: 3vw;
-            }
-
-            section.about .grow .left button a {
-                font-size: 3.3vw;
-
-            }
-
-            section.about .grow .right {
-                height: 70%;
-                width: 90%;
-                align-items: center;
-                padding: 0 6vw;
-            }
-
-            section.about .grow .right .star {
-                flex-direction: column;
-                justify-content: space-evenly;
-            }
-
-
-            section.about .grow .right .star h1 i {
-                font-size: 4.5vw;
-            }
-
-            section.about .grow .right .star p {
-                font-size: 3.5vw;
-
-            }
-
-            section.about .grow .right .content p {
-                font-size: 4.5vw;
-                line-height: 3.5vh;
-                text-align: center;
-            }
-
-            section.about .grow .right .content .stephen img {
-                width: 18vw;
-                height: 18vw;
-
-            }
-
-            section.about .grow .right .content .stephen h4 {
-                font-size: 4.5vw;
-            }
-
-
-            section.contact {
-                /* background-color: red; */
-                height: 200vh;
-            }
-
-            section.contact .connect {
-                height: 55%;
-                /* background-color: #050978; */
-                flex-direction: column;
-                margin-top: 0vw;
-                /* justify-content: center; */
-            }
-
-            section.contact .connect .quote {
-                width: 80%;
-                height: 40%;
-                row-gap: 0.2vh;
-            }
-
-            section.contact .connect .quote h6 {
+            section.about h6 {
                 font-size: 4vw;
-                /* text-align: center; */
-                margin-left: 19vw;
+                /* color: #EFAD4E; */
+                /* margin-top: 2vh; */
             }
-
-            section.contact .connect .quote h3 {
-                font-size: 9vw;
-            }
-
-            section.contact .connect .quote p {
-                font-size: 5vw;
-                line-height: 4vh;
+            section.about p{
                 text-align: center;
             }
 
-            section.contact .connect .form {
-                width: 80%;
-                height: 58%;
-            }
-
-            section.contact .connect .form form input {
-                height: 5vh;
-                font-size: 2vh;
-            }
-
-            section.contact .connect .form form .phone,
-            .company {
-                height: 5vh;
-            }
-
-            section.contact .connect .form form p {
-                font-size: 3.7vw;
-                line-height: 3vh;
-            }
-
-            section.contact .connect .form form button {
-                height: 6vh;
-                font-size: 4vw;
-                border-radius: 4vw;
-            }
-
-            section.contact h3 {
-                font-size: 8vw;
-                text-align: center;
-            }
-
-            section.contact p {
-                font-size: 4vw;
-                text-align: center;
-
-            }
-
-            section.contact .support {
-                flex-direction: column;
-                height: 40%;
+            section.about .first {
+                /* width: 100%; */
+                height: 30%;
                 /* background-color: green; */
+                /* display: flex; */
+                /* justify-content: space-around; */
+                /* align-items: center; */
+                padding-left: 0vw;
+                flex-direction: column;
+            }
+
+            section.about .first .pic {
+                width: 90%;
+                height: 80%;
+                padding: 2vw 1vw;
 
             }
 
-            section.contact .support .para {
+            /* section.about .first .pic img {
+                width: 100%;
+                height: 100%;
+            } */
+
+            section.about .first .para {
                 width: 90%;
+                /* height: 80%; */
+                /* display: flex; */
+                /* justify-content: center; */
+                /* align-items: start; */
+                /* flex-direction: column; */
+                /* background-color: #EFAD4E; */
+                /* padding: 0 2vw; */
+            }
+
+            section.about .first .para h2 {
+                font-size: 6vw;
+            }
+
+            section.about .first .para .line {
+                width: 15%;
+                /* height: 0.5vh; */
+                /* background-color: #EFAD4E; */
+                /* margin-top: 2vh; */
+            }
+
+            /* section.about .first .para .material {
+                width: 100%;
+                height: 70%; */
+                /* background-color: aqua; */
+                /* display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+
+
+            } */
+
+            section.about .first .para .material div {
+                /* width: 100%; */
+                height: 25%;
+                /* display: flex;
+                justify-content: start;
+                align-items: center; */
+
+            }
+
+            section.about .first .para .material div p {
+                font-size: 4vw;
+                line-height: 2.4vh;
+                text-align: start;
+                margin-left: 2vw;
+                margin-top: 0.5vw;
+            }
+
+            section.about .first .para .material div .gola {
+                width: 6vw;
+                height: 6vw;
+                background-color: #EFAD4E;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
                 align-items: center;
             }
 
-            section.contact .support .para h5 {
-                font-size: 6.5vw;
-                text-align: center;
+            /* section.about .first .para .material div .gola i {
+                color: #03442E;
+            } */
+
+            /* section.about p {
+                padding: 0 5vw;
+            } */
+
+            section.about .photo {
+                /* width: 100%; */
+                height: 35%;
+                /* background-color: aquamarine; */
+                /* display: flex; */
+                /* justify-content: space-evenly; */
+                /* align-items: center; */
+                /* padding: 0 3vw; */
+                flex-direction: column;
             }
 
-            section.contact .support .para p {
-                font-size: 4.5vw;
-                line-height: 3.5vh;
+            section.about .photo div {
+                width: 90%;
+                height: 32%;
+                /* background-color: pink ; */
+                /* display: flex; */
+                /* justify-content: center; */
+                /* align-items: start; */
+                /* flex-direction: column; */
+                /* padding: 2vw 1vw; */
             }
+
+            section.about .photo div div {
+                /* width: 90%; */
+                height: 60%;
+                /* overflow: hidden; */
+                /* position: relative; */
+                /* transition: all 0.5s ease; */
+            }
+
+            /* section.about .photo div div img {
+                width: 100%;
+                height: 100%;
+                transition: all 1s ease;
+
+            } */
+
+            /* section.about .photo div div:hover img {
+                transform: scale(1.2) rotate(5deg);
+            } */
+
+            /* section.about .photo div div::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                background-color: red;
+                opacity: 0.6;
+                z-index: 10;
+            } */
+
+            /* section.about .photo div .img1::after {
+                background-color: blue;
+            }
+
+            section.about .photo div .img2::after {
+                background-color: green;
+            } */
+
+            section.about .photo div h3 {
+                font-size: 5.5vw;
+                margin-top: 3vh;
+            }
+
+            section.about .photo div p {
+                font-size: 3vw;
+                /* margin-top: 0.5vw; */
+                line-height: 2.5vh;
+                text-align: start;
+                /* margin-left: -5vw; */
+            }
+
+
 
 
         }
@@ -426,7 +417,7 @@
 
         <nav>
             <div class="logo">
-                <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
+                <img src="./Assets/berks logo.webp" alt="">
             </div>
             <div class="item">
                 <a href="./index.html">Home</a>
@@ -441,8 +432,45 @@
         </div>
 
         <section class="about">
-
-            <h2>What is Sales Outstanding?</h2>
+            <h6>OUR DNA</h6>
+            <h2>We inspire and influence human behaviour</h2>
+            <p>it's the unique CPM approach that makes us different.We bring ideas to life withcommitment, energy and
+                positivity.</p>
+            <div class="first">
+                <div class="pic">
+                    <img src="./Assets/hr.webp" alt="">
+                </div>
+                <div class="para">
+                    <h2>About HRHNext</h2>
+                    <div class="line"></div>
+                    <div class="material">
+                        <div>
+                            <div class="gola">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p>Over 15 years of BPO expertise with a comprehensive service portfolio</p>
+                        </div>
+                        <div>
+                            <div class="gola">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p>Cutting-edge analytics for intelligent, responsive business insights</p>
+                        </div>
+                        <div>
+                            <div class="gola">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p>Advanced technology and robust infrastructure ensure high-quality service</p>
+                        </div>
+                        <div>
+                            <div class="gola">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p>Committed to customer satisfaction and loyalty through exceptional experiences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <p>Sales outsourcing is the practice of hiring a third-party company to handle some or all of your sales
                 activities. This can include tasks such as prospecting for new clients, making sales calls, negotiating
                 deals, and managing customer relationships. Outsourcing sales can be a cost-effective way for a company
@@ -480,98 +508,47 @@
                 team(s) and essentially work as your sales department and an extension of your company. We ensure that
                 our sales professionals always present themselves as your brand to your customers. Many businesses
                 outsource processes like payroll, human resources, and marketing; your sales processes are no different.
-                <br><br>
+
             </p>
 
-
-            <div class="grow">
-                <div class="left">
-                    <h2>Ready to Grow?</h2>
-                    <p>No commitments. Cancel Anytime.</p>
-                    <button><a href="#">LET'S TALK</a></button>
+            <div class="photo">
+                <div class="one">
+                    <div class="img1">
+                        <img src="./Assets/care.jpg" alt="">
+                    </div>
+                    <h3>We care</h3>
+                    <p>At CPM, we’re committed to making your vision a reality. We work hard behind the scenes to get
+                        the job done.</p>
                 </div>
-                <div class="right">
-                    <div class="star">
-                        <h1>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </h1>
-                        <p>5/5 STARS</p>
+                <div class="two">
+                    <div class="img2">
+                        <img src="./Assets/curious.webp" alt="">
                     </div>
-                    <div class="content">
-                        <p>"East Core Inc. is hands down the best outsourced <br> sales organization I've worked with."
-                        </p>
-                        <div class="stephen">
-                            <img src="./Assets/ceo.webp" alt="">
-                            <h4>Stephen Spiegel <br> CEO, <span>Crew hu</span></h4>
-                        </div>
+                    <h3>We’re curious</h3>
+                    <p>We believe in endless possibilities, and we shoot for the stars. Our insatiable curiosity will
+                        drive your business forward.</p>
+                </div>
+                <div class="three">
+                    <div class="img3">
+                        <img src="./Assets/achieve.jpg" alt="">
                     </div>
+                    <h3>We achieve together</h3>
+                    <p>We create our solutions through teamwork and collaboration. CPM people work together to get
+                        results.</p>
                 </div>
             </div>
+
+
+
 
         </section>
 
-        <section id="contact" class="contact">
 
-            <div class="connect">
-                <div class="quote">
-                    <h6>REQUEST A QUOTE</h6>
-                    <h3>Ready to Grow? </h3>
-                    <p>A lack of new business opportunities shouldn't create unnecessary stress. We'll create
-                        opportunities,
-                        your sales team close deals.</p>
-                </div>
-                <div class="form">
-                    <form action="">
-                        <input placeholder="First Name" type="text">
-                        <input placeholder="Last Name" type="text">
-                        <input placeholder="Email" type="email">
-                        <div class="phone">
-                            <input placeholder="Phone" type="number">
-                            <input id="extension" placeholder="Extension" type="text">
-                        </div>
-                        <div class="company">
-                            <input placeholder="Company" type="text">
-                            <input placeholder="Website" type="text">
-                        </div>
-                        <p>We use your information to contact you about our services and revelent content in line with
-                            our
-                            Privacy Policy. You may opt at any time.</p>
-                        <button>LET'S TALK</button>
-                    </form>
-                </div>
-            </div>
-            <h3>Our Awesome Support Team</h3>
-            <p>It's not just the theme- It's also the team</p>
-            <div class="support">
-                <div class="para">
-                    <h5>Amazing Support</h5>
-                    <p>Our technical team is here to help you build an awesome website. We usually answer support issues
-                        in
-                        less than 1 bussiness day.</p>
-                </div>
-                <div class="para">
-                    <h5>Constant Updates</h5>
-                    <p>We're constantly updating Mesmerize to ensure compatibility with the latest wordpress version.
-                        We're
-                        also working to add new, cool features.</p>
-                </div>
-                <div class="para">
-                    <h5>14 Days Money back Guarantee</h5>
-                    <p>Your satisfaction is our main goal. If you're not happy with Mesmerize for any reason, we'll
-                        refund
-                        your purchase. No questions asked.</p>
-                </div>
-            </div>
-        </section>
 
         <footer>
             <div class="up">
                 <div class="first">
-                    <img src="./Assets/EASTCORE FINAL_PNG.webp" alt="">
+                    <img src="./Assets/berks logo.webp" alt="">
                     <p>Distinctively exploit optimal aligments for intuitive bandwidth. Quickly coordinate bussiness
                         through revolutionary.</p>
                 </div>

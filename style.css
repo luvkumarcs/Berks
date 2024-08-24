@@ -62,7 +62,7 @@ html {
     top: 0;
     right: 0;
     z-index: 1001;
-    background-color: #050978;
+    background-color:#03442E;
     width: 60%;
     height: 100%;
     padding: 2vw;
@@ -114,7 +114,7 @@ html {
 nav {
     width: 100%;
     height: 13vh;
-    background-color: white;
+    background-color:#03442E;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +126,7 @@ nav {
 }
 
 nav .logo {
-    width: 5vw;
+    width: 12vw;
     height: 5vw;
     /* background-color:#0E09A4; */
 }
@@ -147,12 +147,12 @@ nav .item {
 
 nav .item a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.3vw;
 }
 
 nav .item a:hover {
-    color: #0E09A4;
+    color: #EFAD4E;
     transform: scale(1.1);
 }
 
@@ -161,14 +161,14 @@ nav .item button {
     height: 5vh;
     font-size: 1vw;
     border-radius: 0.5vw;
-    /* background-color: white; */
-    color: aqua;
-    border: 1px solid #0E09A4;
+    background-color: #03442E;
+    /* color: white; */
+    border: 1px solid #EFAD4E;
 
 }
 
 nav .item button:hover {
-    background-color: #0E09A4;
+    background-color: #EFAD4E;
 }
 
 nav .item button:hover a {
@@ -180,11 +180,11 @@ nav .item button:hover i {
 }
 
 nav .item button a {
-    color: #0E09A4;
+    color: white;
 }
 
 nav .item button i {
-    color: #0E09A4;
+    color: white;
 }
 
 
@@ -203,7 +203,7 @@ section.home {
 section.home .first {
     width: 100%;
     height: 55%;
-    background-color: #0A0889;
+    background-color: #050978;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -296,7 +296,7 @@ section.home .second {
 section.home .second .card .hover{
     width: 100%;
     height: 100%;
-    display: red;
+    /* display: red; */
     position: absolute;
     top: -100%;
 }
@@ -320,7 +320,7 @@ section.home .second .card::after{
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #050978;
+    background-color: #03442E;
     position: absolute;
     bottom: -100%;
     transition: all 0.3s ease;
@@ -541,7 +541,7 @@ section.about .container .card button {
     height: 5vh;
     border-radius: 0.5vw;
     border: none;
-    background-color: #050978;
+    background-color: #03442E;
     transition: all 0.3s ease;
     overflow: hidden;
     position: relative;
@@ -663,7 +663,7 @@ section.carrier .component #component {
 section.carrier .cookie {
     width: 40%;
     height: 18%;
-    background-color: #050978;
+    background-color: #03442E;
     border-radius: 1vw;
     display: flex;
     justify-content: space-evenly;
@@ -791,7 +791,7 @@ section.carrier .icon-container .icon p {
 section.carrier .grow {
     width: 100%;
     height: 60vh;
-    background-color: #0A0889;
+    background-color: #03442E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1220,7 +1220,7 @@ section.contact .support .para p {
 footer {
     width: 100%;
     height: 70vh;
-    background-color: #F6F7FD;
+    background-color: #03442E;
 
 }
 
@@ -1248,18 +1248,19 @@ footer .up .first {
 
 footer .up h4 {
     font-size: 1.5vw;
-    color: #2D1857;
+    color: white;
     margin-top: 2vw;
 }
 
 footer .up .first img {
-    width: 12vw;
-    height: 12vw;
+    width: 18vw;
+    height: 10vw;
 }
 
 footer .up .first p {
     font-size: 1.1vw;
     line-height: 3vh;
+    color: white;
 }
 
 footer .up .link {
@@ -1281,7 +1282,7 @@ footer .up .link ul li {
 
 footer .up .link ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     transition: all 0.3s ease;
 }
 
@@ -1345,7 +1346,7 @@ footer .up .subscribe .icon {
 
 footer .up .subscribe .icon a i {
     font-size: 1.8vw;
-    color: black;
+    color: #EFAD4E;
 }
 
 footer .up .subscribe .icon a i:hover {
@@ -1362,14 +1363,16 @@ footer .down {
     justify-content: space-between;
     padding: 1vw 5vw;
 }
-
+footer .down p{
+    color: white;
+}
 footer .down p span {
-    color: #050978;
+    color: #EFAD4E;
 }
 
 footer .down a {
     text-decoration: none;
-    color: black;
+    color:white;
     font-size: 1.1vw;
 }
 
@@ -1387,7 +1390,7 @@ footer .down a {
     }
 
     nav .logo{
-        width: 15%;
+        width: 25%;
         height: 80%;
     }
 
