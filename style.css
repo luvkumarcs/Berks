@@ -290,6 +290,7 @@ section.home .second {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 1vw;
 
 }
 
@@ -302,7 +303,7 @@ section.home .second .card .hover{
 }
 
 section.home .second .card {
-    width: 33%;
+    width: 33.4%;
     height: 100%;
     /* background-color: #93E658; */
     display: flex;
@@ -521,8 +522,8 @@ section.about .container .card img {
     transition: all 1s ease;
 }
 section.about .container .card img:hover{
-    transform: scale(1.2);
-    /* transform: rotate(10deg); */
+    transform: scale(1.2) rotate(5deg);
+    
 }
 
 section.about .container .card h4 {
@@ -676,7 +677,7 @@ section.carrier .cookie {
 }
 
 section.carrier .cookie h2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin-top: -0.5vw;
     color: #F3F4F6;
     text-align: center;
@@ -1130,7 +1131,7 @@ section.contact .connect .form form button {
     width: 100%;
     height: 4.5vh;
     border-radius: 0.5vw;
-    background-color: black;
+    background-color: #03442E;
     color: white;
     font-size: 1.1vw;
     transition: all 0.3s ease;
@@ -1253,8 +1254,9 @@ footer .up h4 {
 }
 
 footer .up .first img {
-    width: 18vw;
-    height: 10vw;
+    width: 16vw;
+    height: 7vw;
+    margin-top: -3vw;
 }
 
 footer .up .first p {
@@ -1303,7 +1305,7 @@ footer .up .subscribe .form {
     width: 100%;
     height: 17%;
     margin-top: 1vw;
-    /* background-color:red; */
+    background-color:white;
     border-radius: 2vw;
     border: 1px solid black;
 }
@@ -1327,7 +1329,7 @@ footer .up .subscribe .form form button {
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
-    background-color: #5366CF
+    background-color:#F0AD4E;
 }
 
 footer .up .subscribe .form form input:focus {
@@ -1357,23 +1359,24 @@ footer .up .subscribe .icon a i:hover {
 footer .down {
     width: 100%;
     height: 15%;
-    /* background-color: red; */
+    background-color:#F0AD4E;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     padding: 1vw 5vw;
 }
 footer .down p{
     color: white;
+    font-size: 1.3vw;
 }
 footer .down p span {
-    color: #EFAD4E;
+    color: #03442E;
 }
 
 footer .down a {
     text-decoration: none;
     color:white;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
 }
 
 
