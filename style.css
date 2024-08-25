@@ -1241,7 +1241,7 @@ footer .up .first {
     height: 90%;
     /* background-color: white; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     padding: 0 2vw;
@@ -1254,15 +1254,17 @@ footer .up h4 {
 }
 
 footer .up .first img {
-    width: 16vw;
-    height: 7vw;
-    margin-top: -3vw;
+    width: 14vw;
+    height: 10vh;
+    margin-top: 5vh;
+
 }
 
 footer .up .first p {
     font-size: 1.1vw;
     line-height: 3vh;
     color: white;
+    margin-top: 5vh;
 }
 
 footer .up .link {
@@ -1523,13 +1525,6 @@ footer .down a {
 
     }
 
-    section.about #para_sale1 {
-        /* margin-top: -38vw; */
-    }
-
-    section.about #para_sale2 {
-        /* margin-top: -40vw; */
-    }
 
     section.about h2 {
         font-size: 7.5vw;
