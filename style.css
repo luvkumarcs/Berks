@@ -305,7 +305,7 @@ section.home .second .card .hover{
 section.home .second .card {
     width: 33.4%;
     height: 100%;
-    /* background-color: #93E658; */
+    background-color: grey;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -400,18 +400,18 @@ section.home .second .card button a {
     font-size: 1vw;
 }
 
-section.home .second #gen {
+/* section.home .second #gen {
     background-color: #2D1857;
     /* opacity: 0.5; */
-}
+/* } */
 
-section.home .second #b2b {
+/* section.home .second #b2b {
     background-color: #7D2EFA;
 }
 
 section.home .second #sale {
     background-color: #1791FF;
-}
+}  */
 
 section.home .second .card img {
     width: 3vw;
@@ -521,7 +521,7 @@ section.about .container .card img {
     overflow: hidden;
     transition: all 1s ease;
 }
-section.about .container .card img:hover{
+section.about .container .card:hover img{
     transform: scale(1.2) rotate(5deg);
     
 }
