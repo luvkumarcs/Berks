@@ -23,6 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: poppins, sans-serif;
+   
 }
 
 body,
@@ -30,6 +31,7 @@ html {
     width: 100%;
     height: 100%;
     color: #293241;
+    background-color: rgba(211, 211, 211, 0.682);
 
 }
 
@@ -193,7 +195,7 @@ nav .item button i {
 section.home {
     width: 100%;
     height: 120vh;
-    /* background-color: red; */
+    /* background-color:white; */
     position: relative;
     margin-top: 4vw;
 
@@ -203,7 +205,7 @@ section.home {
 section.home .first {
     width: 100%;
     height: 55%;
-    background-color: #050978;
+    background-color:rgba(211, 211, 211, 0.912);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -215,7 +217,7 @@ section.home .first {
 
 section.home .first h2 {
     font-size: 3vw;
-    color: white;
+    color: black;
     position: absolute;
     top: 4vw;
 }
@@ -235,7 +237,7 @@ section.home .first .sales {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    border: 3px solid #93E658;
+    border: 3px solid #EFAD4E;
     border-radius: 0.5vw;
     position: absolute;
     top: 12vw;
@@ -243,7 +245,7 @@ section.home .first .sales {
 
 section.home .first .sales h4 {
     font-size: 2vw;
-    color: white;
+    color:black;
 }
 
 section.home .first .sales .para {
@@ -258,11 +260,11 @@ section.home .first .sales .para {
 
 section.home .first .sales .para p {
     font-size: 1.1vw;
-    color: white;
+    color:black;
 }
 
 section.home .first .sales .para p i {
-    color: #93E658;
+    color: black;
     font-size: 1.5vw;
     font-weight: bolder;
 }
@@ -270,7 +272,7 @@ section.home .first .sales .para p i {
 section.home .first .sales .consult {
     width: 30%;
     height: 17%;
-    background-color: #93E658;
+    background-color: #EFAD4E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,7 +358,7 @@ section.home .second .card button {
     height: 5vh;
     border-radius: 0.5vw;
     border: none;
-    background-color: #050978;
+    background-color:rgba(0, 0, 0, 0.761);
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
@@ -386,6 +388,7 @@ section.home .second .card:hover button {
 
 section.home .second .card button:hover {
     background-color: #EFAD4E;
+    box-shadow: 0 0 10px #EFAD4E;
     
 }
 
@@ -459,6 +462,9 @@ section.about p {
     color: #111827;
 
 }
+section.about p a{
+    color: #F0AD4E;
+}
 
 section.about #para_sale1 {
     margin-top: -1vw;
@@ -498,7 +504,7 @@ section.about .container {
 section.about .container .card {
     width: 24%;
     height: 100%;
-    background-color: white;
+    background-color:whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -522,7 +528,7 @@ section.about .container .card img {
     transition: all 1s ease;
 }
 section.about .container .card:hover img{
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2) rotate(3deg);
     
 }
 
@@ -575,6 +581,9 @@ section.about .container .card button:hover a {
     z-index: 1;
     color: black;
     
+}
+section.about .container .card button:hover{
+    box-shadow: 0 0 10px #F0AD4E;
 }
 
 section.about .container .card button a {
@@ -1012,7 +1021,7 @@ section.contact .client .card h3 {
     margin-top: -1.8vw;
     font-weight: 500;
     font-family: work;
-    color: #050978;
+    color:black;
 }
 
 section.contact .client .card h4 {
@@ -1124,7 +1133,7 @@ section.contact .connect .form form p {
     font-size: 1.1vw;
     line-height: 3vh;
     font-family: roboto;
-    color: #293241;
+    color:black;
 }
 
 section.contact .connect .form form button {
@@ -1169,7 +1178,7 @@ section.contact .connect .form form button:hover {
 section.contact h3 {
     font-size: 2.7vw;
     font-weight: 500;
-    color: #050978;
+    color: #F0AD4E;
     margin-top: 2vw;
 }
 
@@ -1213,14 +1222,14 @@ section.contact .support .para h5 {
 section.contact .support .para p {
     font-size: 1.1vw;
     line-height: 3.2vh;
-    color: #BBC5D9;
+    color: black;
 }
 
 
 
 footer {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background-color: #03442E;
 
 }
@@ -1230,7 +1239,7 @@ footer .up {
     height: 85%;
     /* background-color:#F6F7FD; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     column-gap: 5vw;
 
@@ -1291,7 +1300,7 @@ footer .up .link ul li a {
 }
 
 footer .up .link ul li a:hover {
-    color: #1791FF;
+    color: #F0AD4E;
     transform: scale(1.1);
 }
 
@@ -1305,10 +1314,10 @@ footer .up .subscribe {
 
 footer .up .subscribe .form {
     width: 100%;
-    height: 17%;
+    height: 23%;
     margin-top: 1vw;
-    background-color:white;
-    border-radius: 2vw;
+    background-color: white;
+    border-radius: 1.8vw;
     border: 1px solid black;
 }
 
@@ -1322,7 +1331,7 @@ footer .up .subscribe .form form input {
     width: 75%;
     height: 100%;
     border: none;
-    border-radius: 2vw;
+    border-radius: 1.8vw;
     padding: 0 2vw;
     font-size: 1.2vw;
 }
@@ -1355,21 +1364,22 @@ footer .up .subscribe .icon a i {
 
 footer .up .subscribe .icon a i:hover {
     transform: scale(1.1);
-    color: #050978;
+    color: black;
 }
 
 footer .down {
     width: 100%;
-    height: 15%;
+    height: 12%;
     background-color:#F0AD4E;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1vw 5vw;
+    margin-top: 0.7vw;
 }
 footer .down p{
     color: white;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
 }
 footer .down p span {
     color: #03442E;
@@ -1378,7 +1388,7 @@ footer .down p span {
 footer .down a {
     text-decoration: none;
     color:white;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
 }
 
 
