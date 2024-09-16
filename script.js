@@ -55,14 +55,12 @@ var tl = gsap.timeline();
 gsap.from(" section.home .first h2", {
     opacity: 0,
     duration: 2,
-    // scale: 0.1,
     y: 300
 })
 
 gsap.from(" section.home .first .sales", {
     opacity: 0,
     duration: 2,
-    // scale: 0.1,
     y: 200,
     stagger: 0.3
 })
