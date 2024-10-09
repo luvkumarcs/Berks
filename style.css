@@ -283,6 +283,16 @@ section.home .first .sales .consult {
     position: absolute;
     bottom: -1.5vw
 }
+section.home .first .sales .consult button{
+    width: 100%;
+    height: 100%;
+    background-color: #FF9B00;
+}
+section.home .first .sales .consult button a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #111827;
+}
 
 
 section.home .second {
@@ -445,7 +455,7 @@ section.home .second .card:hover img{
 
 section.about {
     width: 100%;
-    height: 160vh;
+    height: 130vh;
     /* background-color: aqua; */
     padding: 2vw 3vw;
     display: flex;
@@ -599,7 +609,7 @@ section.about .container .card button a {
 
 section.carrier {
     width: 100%;
-    height: 280vh;
+    height: 150vh;
     /* background-color:red; */
     display: flex;
     justify-content: space-evenly;
@@ -609,7 +619,7 @@ section.carrier {
 }
 
 section.carrier h5 {
-    font-size: 1vw;
+    font-size: 1.6vw;
     color: #FF9B00;
     margin-top: 1vw;
 }
@@ -961,10 +971,10 @@ section.carrier .grow .right .content .stephen h4 {
 
 section.contact {
     width: 100%;
-    height: 200vh;
+    height: 80vh;
     /* background-color:red; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -1044,13 +1054,13 @@ section.contact .client .card p {
 
 section.contact .connect {
     width: 100%;
-    height: 28%;
+    height: 80%;
     /* background-color: #0A0889; */
     display: flex;
     justify-content: center;
     column-gap: 2vw;
     align-items: center;
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
 }
 
 section.contact .connect .quote {
@@ -1450,6 +1460,9 @@ footer .down p span {
         /* height: 10%; */
         
     }
+    section.home .first .sales .consult button a{
+        font-size: 4.5vw;
+    }
 
     section.home .first .sales .para {
         height: 60%;
@@ -1589,7 +1602,7 @@ footer .down p span {
     }
 
     section.carrier {
-        height: 450vh;
+        height: 120vh;
         /* background-color: red; */
     }
 
@@ -1599,7 +1612,7 @@ footer .down p span {
     }
 
     section.carrier h2 {
-        font-size: 7.5vw;
+        font-size: 6.6vw;
         color: #293241;
         margin-top: 3vw;
         text-align: center;
@@ -1607,7 +1620,7 @@ footer .down p span {
 
     section.carrier .component {
         /* column-gap: 9vw; */
-        height: 7.5%;
+        height: 28%;
         /* margin-top: -3vw; */
     }
 
@@ -1761,17 +1774,17 @@ footer .down p span {
 
     section.contact{
         /* background-color: red; */
-        height: 500vh;
+        height: 110vh;
     } 
     section.contact h5 {
-        font-size: 4vw;
-        /* margin-top: 4vw; */
+        font-size: 6vw;
+        /* margin-top: -10vw; */
 
     }
 
     section.contact h2 {
         font-size: 8.5vw;
-        /* margin-top: 4vw; */
+        /* margin-top: -10vw; */
 
     }
 
@@ -1816,9 +1829,9 @@ footer .down p span {
     }
 
     section.contact .connect {
-        height: 32%;
+        height: 100%;
         flex-direction: column;
-        margin-top: -25vw;
+        /* margin-top: -25vw; */
         /* justify-content: center; */
     }
 
