@@ -10,6 +10,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/53838b1535.js" crossorigin="anonymous"></script>
 
     <style>
         .head {
@@ -225,9 +226,51 @@
 
         section.faq {
             width: 100%;
-            height: 100vh;
+            height: 130vh;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
             /* background-color: red; */
 
+        }
+
+        section.faq .accordian {
+            width: 80%;
+            /* height: 15vh; */
+            background-color: rgb(255, 247, 247);
+            padding: 2vh 5vw;
+            cursor: pointer;
+            margin-top: 2vh;
+        }
+
+        section.faq .accordian .question {
+            /* width: 100%; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        section.faq .accordian .question .icon {
+            font-size: 1.7vw;
+            /* margin-right: 30vw; */
+            /* margin-top: 1.6vw; */
+            transition: transform 0.3s ease;
+        }
+
+        section.faq .accordian .question .icon.active {
+            transform: rotate(-180deg);
+        }
+
+        section.faq .accordian .answer {
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        section.faq .accordian .answer.active {
+            max-height: fit-content;
         }
 
         section.faq h3 {
@@ -237,14 +280,15 @@
 
         section.faq h5 {
             font-size: 1.4vw;
-            margin-top: 1.6vw;
-            margin-left: 5vw;
+            /* margin-top: 1.6vw; */
+            /* margin-left: 5vw; */
         }
 
         section.faq p {
             font-size: 1.2vw;
-            margin-top: 0.3vw;
-            margin-left: 5vw;
+            margin-top: 1vw;
+            color: #666;
+            /* margin-left: 5vw; */
         }
 
 
@@ -448,6 +492,44 @@
 
             }
 
+            section.faq .accordian {
+                width: 100%;
+                /* height: 15vh; */
+                /* background-color: rgb(255, 247, 247); */
+                padding: 2vh 5vw;
+                /* cursor: pointer; */
+                margin-top: 2vh;
+            }
+
+            /* section.faq .accordian .question { */
+                /* width: 100%; */
+                /* display: flex; */
+                /* align-items: center; */
+                /* justify-content: space-between; */
+            /* } */
+
+            section.faq .accordian .question .icon {
+                font-size: 3.5vw;
+                /* margin-right: 30vw; */
+                /* margin-top: 1.6vw; */
+                /* transition: transform 0.3s ease; */
+            }
+
+            /* section.faq .accordian .question .icon.active {
+                transform: rotate(-180deg);
+            } */
+
+            /* section.faq .accordian .answer {
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                transition: transform 0.3s ease;
+            } */
+
+            /* section.faq .accordian .answer.active {
+                max-height: fit-content;
+            } */
+
             section.faq h3 {
                 text-align: center;
                 font-size: 6vw;
@@ -455,14 +537,14 @@
 
             section.faq h5 {
                 font-size: 4.5vw;
-                margin-top: 3vh;
-                margin-left: 5vw;
+                /* margin-top: 3vh; */
+                /* margin-left: 5vw; */
             }
 
             section.faq p {
                 font-size: 4vw;
-                margin-top:1.5vh;
-                margin-left: 5vw;
+                /* margin-top: 1.5vh; */
+                /* margin-left: 5vw; */
             }
 
 
@@ -600,46 +682,96 @@
         </section>
 
         <section class="faq">
-            <div class="faq">
-                <h3>Frequently Asked Questions</h3>
 
-                <h5>Q: Which telecom providers do you partner with?</h5>
-                <p>Ans:-We proudly represent Sasktel, Joink, and Eastlink as some of our clients.</p>
-                <!-- <hr> -->
+            <h3>Frequently Asked Questions</h3>
 
-                <h5>Q: What areas do your door-to-door sales representatives cover?</h5>
-                <p>Ans:-Our representatives serve most of Canada and currently cover Illinois and Indiana in the USA.
-                </p>
-                <!-- <hr> -->
-
-                <h5>Q: What telecom services do you offer door-to-door?</h5>
-                <p>Ans:-Our representatives offer high-speed internet, TV packages, phone plans, bundles, and
-                    promotions.</p>
-                <!-- <hr> -->
-
-                <h5>Q: How do I know if a Berks representative is legitimate?</h5>
-                <p>Ans:-Our representatives carry company ID badges and can verify requests.</p>
-                <!-- <hr> -->
-
-                <h5>Q: What B2B sales services do you offer?</h5>
-                <p>Ans:-We provide tailored telecom solutions for businesses, including customized packages and
-                    dedicated business support.</p>
-                <!-- <hr> -->
-
-                <h5>Q: what other form of direct sales do you do?</h5>
-                <p>Ans:-We attend events such as trade shows and conferences to represent our telecom providers.</p>
-                <!-- <hr> -->
-
-                <h5>Q: What is your company's growth plan internationally?</h5>
-                <p>Ans:-Our company is currently focused on expanding our services within North America, but we are
-                    actively exploring opportunities for international growth in the future.</p>
-                <!-- <hr> -->
-
-                <h5>Q: Do you have job opportunities available at your company?</h5>
-                <p>Ans:-We regularly have job opportunities for door-to-door sales representatives, B2B sales
-                    professionals, and other positions.</p>
-                <!-- <hr> -->
+            <div class="accordian">
+                <div class="question">
+                    <h5>Which telecom providers do you partner with?</h5>
+                    <i class="active icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class=" active answer">
+                    <p>We proudly represent Sasktel, Joink, and Eastlink as some of our clients.</p>
+                </div>
             </div>
+
+            <div class="accordian">
+                <div class="question">
+                    <h5>What areas do your door-to-door sales representatives cover?</h5>
+                    <i class="active icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class=" active answer">
+                    <p>Our representatives serve most of Canada and currently cover Illinois and Indiana in the USA.</p>
+                </div>
+            </div>
+
+            <div class="accordian">
+                <div class="question">
+                    <h5>What telecom services do you offer door-to-door?</h5>
+                    <i class="active icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class=" active answer">
+                    <p>Our representatives offer high-speed internet, TV packages, phone plans, bundles, and promotions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordian">
+                <div class="question">
+                    <h5>How do I know if a Berks representative is legitimate?</h5>
+                    <i class="active icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class=" active answer">
+                    <p>Our representatives carry company ID badges and can verify requests.</p>
+                </div>
+            </div>
+
+            <div class="accordian">
+                <div class="question">
+                    <h5>What B2B sales services do you offer?</h5>
+                    <i class="active icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class=" active answer">
+                    <p>We provide tailored telecom solutions for businesses, including customized packages and dedicated
+                        business support.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordian">
+                <div class="question">
+                    <h5> what other form of direct sales do you do?</h5>
+                    <i class="active icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class=" active answer">
+                    <p>We attend events such as trade shows and conferences to represent our telecom providers.</p>
+                </div>
+            </div>
+
+            <div class="accordian">
+                <div class="question">
+                    <h5>What is your company's growth plan internationally?
+                    </h5>
+                    <i class="active icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class=" active answer">
+                    <p>Our company is currently focused on expanding our services within North America, but we are
+                        actively exploring opportunities for international growth in the future.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordian">
+                <div class="question">
+                    <h5>Do you have job opportunities available at your company?</h5>
+                    <i class="active icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class=" active answer">
+                    <p>We regularly have job opportunities for door-to-door sales representatives, B2B sales
+                        professionals, and other positions.</p>
+                </div>
+            </div>
+
         </section>
 
 
