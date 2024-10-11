@@ -262,6 +262,7 @@ section.home .first .sales .para {
 section.home .first .sales .para p {
     font-size: 1.1vw;
     color:black;
+    text-align: justify;
 }
 
 section.home .first .sales .para p i {
@@ -359,6 +360,7 @@ section.home .second .card:hover h3 {
 section.home .second .card p {
     font-size: 1.1vw;
     line-height: 3vh;
+    text-align: justify;
 }
 section.home .second .card:hover p{
     z-index: 1;
@@ -471,6 +473,7 @@ section.about p {
     line-height: 4vh;
     margin-top: 2vw;
     color: #111827;
+    text-align: justify;
 
 }
 section.about p a{
