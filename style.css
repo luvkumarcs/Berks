@@ -23,7 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: poppins, sans-serif;
-   
+
 }
 
 body,
@@ -64,7 +64,7 @@ html {
     top: 0;
     right: 0;
     z-index: 1001;
-    background-color:#03442E;
+    background-color: #03442E;
     width: 60%;
     height: 100%;
     padding: 2vw;
@@ -116,7 +116,7 @@ html {
 nav {
     width: 100%;
     height: 13vh;
-    background-color:#03442E;
+    background-color: #03442E;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,7 +206,7 @@ section.home {
 section.home .first {
     width: 100%;
     height: 55%;
-    background-color:rgba(211, 211, 211, 0.912);
+    background-color: rgba(211, 211, 211, 0.912);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -246,7 +246,7 @@ section.home .first .sales {
 
 section.home .first .sales h4 {
     font-size: 2vw;
-    color:black;
+    color: black;
 }
 
 section.home .first .sales .para {
@@ -261,7 +261,7 @@ section.home .first .sales .para {
 
 section.home .first .sales .para p {
     font-size: 1.1vw;
-    color:black;
+    color: black;
     text-align: justify;
 }
 
@@ -284,12 +284,14 @@ section.home .first .sales .consult {
     position: absolute;
     bottom: -1.5vw
 }
-section.home .first .sales .consult button{
+
+section.home .first .sales .consult button {
     width: 100%;
     height: 100%;
     background-color: #FF9B00;
 }
-section.home .first .sales .consult button a{
+
+section.home .first .sales .consult button a {
     text-decoration: none;
     font-size: 1.2vw;
     color: #111827;
@@ -308,7 +310,7 @@ section.home .second {
 
 }
 
-section.home .second .card .hover{
+section.home .second .card .hover {
     width: 100%;
     height: 100%;
     /* display: red; */
@@ -331,7 +333,7 @@ section.home .second .card {
     overflow: hidden;
 }
 
-section.home .second .card::after{
+section.home .second .card::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -339,7 +341,7 @@ section.home .second .card::after{
     position: absolute;
     bottom: -100%;
     transition: all 0.3s ease;
-    
+
 }
 
 
@@ -362,7 +364,8 @@ section.home .second .card p {
     line-height: 3vh;
     text-align: justify;
 }
-section.home .second .card:hover p{
+
+section.home .second .card:hover p {
     z-index: 1;
 }
 
@@ -371,25 +374,26 @@ section.home .second .card button {
     height: 5vh;
     border-radius: 0.5vw;
     border: none;
-    background-color:rgba(0, 0, 0, 0.761);
+    background-color: rgba(0, 0, 0, 0.761);
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 
-section.home .second .card button::after{
+section.home .second .card button::after {
     content: "";
     width: 100%;
     height: 100%;
     background-color: #FF9B00;
     position: absolute;
-    top:0;
-    left:-100%;
+    top: 0;
+    left: -100%;
     transition: all 0.3s ease;
-    
+
 }
-section.home .second .card button:hover::after{
+
+section.home .second .card button:hover::after {
     top: 0;
     left: 0;
     z-index: -1;
@@ -402,7 +406,7 @@ section.home .second .card:hover button {
 section.home .second .card button:hover {
     background-color: #FF9B00;
     box-shadow: 0 0 10px #FF9B00;
-    
+
 }
 
 section.home .second .card button:hover a {
@@ -416,24 +420,14 @@ section.home .second .card button a {
     font-size: 1vw;
 }
 
-/* section.home .second #gen {
-    background-color: #2D1857;
-    /* opacity: 0.5; */
-/* } */
 
-/* section.home .second #b2b {
-    background-color: #7D2EFA;
-}
-
-section.home .second #sale {
-    background-color: #1791FF;
-}  */
 
 section.home .second .card img {
     width: 3vw;
     height: 3vw;
 }
-section.home .second .card:hover img{
+
+section.home .second .card:hover img {
     z-index: 1;
 }
 
@@ -476,7 +470,8 @@ section.about p {
     text-align: justify;
 
 }
-section.about p a{
+
+section.about p a {
     color: #FF9B00;
 }
 
@@ -506,7 +501,7 @@ section.about h3 {
 section.about .container {
     width: 100%;
     height: 48%;
-    /* background-color: #1791FF; */
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -518,7 +513,7 @@ section.about .container {
 section.about .container .card {
     width: 24%;
     height: 100%;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -541,9 +536,10 @@ section.about .container .card img {
     overflow: hidden;
     transition: all 1s ease;
 }
-section.about .container .card:hover img{
+
+section.about .container .card:hover img {
     transform: scale(1.2) rotate(3deg);
-    
+
 }
 
 section.about .container .card h4 {
@@ -567,26 +563,28 @@ section.about .container .card button {
     overflow: hidden;
     position: relative;
     z-index: 1;
-  
+
 
 }
-section.about .container .card button::after{
+
+section.about .container .card button::after {
     content: "";
     width: 100%;
     height: 100%;
     background-color: #FF9B00;
     position: absolute;
-    top:0;
-    left:-100%;
+    top: 0;
+    left: -100%;
     transition: all 0.3s ease;
     /* border-radius: 0.5vw; */
-    
-    
-    
+
+
+
 }
-section.about .container .card button:hover::after{
+
+section.about .container .card button:hover::after {
     top: 0;
-    left:0;
+    left: 0;
     z-index: -1;
 }
 
@@ -594,9 +592,10 @@ section.about .container .card button:hover::after{
 section.about .container .card button:hover a {
     z-index: 1;
     color: black;
-    
+
 }
-section.about .container .card button:hover{
+
+section.about .container .card button:hover {
     box-shadow: 0 0 10px #FF9B00;
 }
 
@@ -604,11 +603,11 @@ section.about .container .card button a {
     text-decoration: none;
     color: white;
     font-size: 1.1vw;
-  
+
 }
 
 
-/* code for carrier section */
+
 
 section.carrier {
     width: 100%;
@@ -636,8 +635,6 @@ section.carrier h2 {
 section.carrier .component {
     width: 100%;
     height: 20%;
-    /* background-color: #F3F4F6; */
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     column-gap: 2vw;
@@ -724,7 +721,7 @@ section.carrier .cookie button {
     overflow: hidden;
 }
 
-section.carrier .cookie button::after{
+section.carrier .cookie button::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -733,7 +730,7 @@ section.carrier .cookie button::after{
     top: 0;
     left: -100%;
     transition: all 0.3s ease;
-    
+
 }
 
 section.carrier .cookie button:hover::after {
@@ -741,7 +738,8 @@ section.carrier .cookie button:hover::after {
     left: 0;
     z-index: -1;
 }
-section.carrier .cookie button:hover{
+
+section.carrier .cookie button:hover {
     z-index: 1;
 }
 
@@ -860,7 +858,8 @@ section.carrier .grow .left button {
     z-index: 1;
 
 }
-section.carrier .grow .left button::after{
+
+section.carrier .grow .left button::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -869,9 +868,10 @@ section.carrier .grow .left button::after{
     top: 0;
     left: -100%;
     transition: all 0.3s ease;
-    
+
 }
-section.carrier .grow .left button:hover::after{
+
+section.carrier .grow .left button:hover::after {
     top: 0;
     left: 0;
     z-index: -1;
@@ -1035,7 +1035,7 @@ section.contact .client .card h3 {
     margin-top: -1.8vw;
     font-weight: 500;
     font-family: work;
-    color:black;
+    color: black;
 }
 
 section.contact .client .card h4 {
@@ -1043,7 +1043,7 @@ section.contact .client .card h4 {
     font-weight: 500;
     text-align: center;
     line-height: 4vh;
-    color:#FF9B00;
+    color: #FF9B00;
     font-family: archivo;
 }
 
@@ -1080,7 +1080,7 @@ section.contact .connect .quote {
 
 section.contact .connect .quote h6 {
     font-size: 2vw;
-    color:#FF9B00;
+    color: #FF9B00;
     font-family: archivo;
 }
 
@@ -1147,7 +1147,7 @@ section.contact .connect .form form p {
     font-size: 1.1vw;
     line-height: 3vh;
     font-family: roboto;
-    color:black;
+    color: black;
 }
 
 section.contact .connect .form form button {
@@ -1163,7 +1163,7 @@ section.contact .connect .form form button {
     z-index: 1;
 }
 
-section.contact .connect .form form button::after{
+section.contact .connect .form form button::after {
     content: "";
     position: absolute;
     background-color: white;
@@ -1175,10 +1175,11 @@ section.contact .connect .form form button::after{
     left: 0;
 }
 
-section.contact .connect .form form button:hover::after{
+section.contact .connect .form form button:hover::after {
     top: 0;
     left: 0;
 }
+
 section.contact .connect .form form button:hover {
     /* background-color: white; */
     color: black;
@@ -1354,7 +1355,7 @@ footer .up .subscribe .form form button {
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
-    background-color:#F0AD4E;
+    background-color: #F0AD4E;
 }
 
 footer .up .subscribe .form form input:focus {
@@ -1384,17 +1385,19 @@ footer .up .subscribe .icon a i:hover {
 footer .down {
     width: 100%;
     height: 12%;
-    background-color:#F0AD4E;
+    background-color: #F0AD4E;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1vw 5vw;
     margin-top: 0.7vw;
 }
-footer .down p{
+
+footer .down p {
     color: white;
     font-size: 1.1vw;
 }
+
 footer .down p span {
     color: #03442E;
 }
@@ -1414,11 +1417,11 @@ footer .down p span {
         height: 10vh;
     }
 
-    nav .item{
+    nav .item {
         display: none;
     }
 
-    nav .logo{
+    nav .logo {
         width: 35%;
         height: 75%;
     }
@@ -1431,7 +1434,7 @@ footer .down p span {
         height: 160vh;
         margin-top: 10vh;
         /* background-color: red; */
-        
+
     }
 
     section.home .first {
@@ -1445,10 +1448,10 @@ footer .down p span {
 
     section.home .first .sales {
         width: 95%;
-       height: 75%;
-       margin-top: 3vw;
-       border: 4px solid #EFAD4E;
-       /* align-items: center; */
+        height: 75%;
+        margin-top: 3vw;
+        border: 4px solid #EFAD4E;
+        /* align-items: center; */
 
     }
 
@@ -1456,14 +1459,16 @@ footer .down p span {
         font-size: 5vw;
         text-align: center;
     }
-    section.home .first .sales .consult{
+
+    section.home .first .sales .consult {
         font-size: 4.5vw;
         width: 80%;
-        margin-bottom:-3vw;
+        margin-bottom: -3vw;
         /* height: 10%; */
-        
+
     }
-    section.home .first .sales .consult button a{
+
+    section.home .first .sales .consult button a {
         font-size: 4.5vw;
     }
 
@@ -1471,7 +1476,7 @@ footer .down p span {
         height: 60%;
         width: 90%;
         flex-direction: column;
-        justify-content:start;
+        justify-content: start;
         row-gap: 4.5vw;
         /* align-items: start; */
     }
@@ -1491,12 +1496,14 @@ footer .down p span {
         /* background-color: red; */
         flex-direction: column;
     }
-    section.home .second .card{
+
+    section.home .second .card {
         width: 100%;
         /* height: 90%; */
         padding: 0 15vw;
     }
-    section.home .second .card img{
+
+    section.home .second .card img {
         width: 10vw;
         height: 10vw;
     }
@@ -1518,7 +1525,8 @@ footer .down p span {
         width: 25vw;
         height: 5vh;
     }
-    section.home .second .card button a{
+
+    section.home .second .card button a {
         font-size: 3vw;
     }
 
@@ -1539,15 +1547,12 @@ footer .down p span {
         width: 100%;
         height: 380vh;
         padding: 2vw 3vw;
-        /* background-color: red; */
-        /* margin-top: -10vw; */
 
     }
 
     section.about p {
         font-size: 4.5vw;
         line-height: 4vh;
-        /* margin-top: -95vw; */
         color: #111827;
 
     }
@@ -1576,7 +1581,7 @@ footer .down p span {
         width: 99%;
         height: 24.5%;
         padding: 0 8vw;
-       
+
     }
 
     section.about .container .card img {
@@ -1590,8 +1595,8 @@ footer .down p span {
     }
 
     section.about .container .card p {
-        font-size:4.5vw;
-        line-height:4vh;
+        font-size: 4.5vw;
+        line-height: 4vh;
         margin-top: 0.5vw;
     }
 
@@ -1601,7 +1606,7 @@ footer .down p span {
     }
 
     section.about .container .card button a {
-        font-size:3.5vw;
+        font-size: 3.5vw;
     }
 
     section.carrier {
@@ -1644,7 +1649,7 @@ footer .down p span {
     }
 
     section.carrier .component .para p {
-        font-size:4.3vw;
+        font-size: 4.3vw;
         line-height: 3.7vh;
         text-align: center;
         margin-top: 2vw;
@@ -1677,15 +1682,18 @@ footer .down p span {
         font-size: 3vw;
 
     }
+
     section.carrier .icon-container {
         /* background-color: #1791FF; */
         flex-direction: column;
         height: 50%;
     }
-    section.carrier .icon-container .icon img{
+
+    section.carrier .icon-container .icon img {
         width: 65vw;
         height: 65vw;
     }
+
     section.carrier .icon-container .icon {
         height: 80%;
         width: 90%;
@@ -1732,6 +1740,7 @@ footer .down p span {
         height: 7vh;
         border-radius: 3vw;
     }
+
     section.carrier .grow .left button a {
         font-size: 3.3vw;
 
@@ -1744,7 +1753,7 @@ footer .down p span {
         padding: 0 6vw;
     }
 
-    section.carrier .grow .right .star{
+    section.carrier .grow .right .star {
         flex-direction: column;
         justify-content: space-evenly;
     }
@@ -1772,13 +1781,14 @@ footer .down p span {
     }
 
     section.carrier .grow .right .content .stephen h4 {
-        font-size:4.5vw;
+        font-size: 4.5vw;
     }
 
-    section.contact{
+    section.contact {
         /* background-color: red; */
         height: 110vh;
-    } 
+    }
+
     section.contact h5 {
         font-size: 6vw;
         /* margin-top: -10vw; */
@@ -1806,7 +1816,7 @@ footer .down p span {
         /* border: 1px solid black; */
         padding: 0vw 8vw;
         border-radius: 5vw;
-      
+
     }
 
     section.contact .client .card img {
@@ -1815,11 +1825,11 @@ footer .down p span {
     }
 
     section.contact .client .card h3 {
-        font-size:7vw;
+        font-size: 7vw;
     }
 
     section.contact .client .card h4 {
-        font-size:6vw;
+        font-size: 6vw;
         font-weight: 300;
         line-height: 5vh;
     }
@@ -1876,7 +1886,7 @@ footer .down p span {
     }
 
     section.contact .connect .form form p {
-        font-size:3.7vw;
+        font-size: 3.7vw;
         line-height: 3vh;
     }
 
@@ -1896,15 +1906,16 @@ footer .down p span {
         text-align: center;
 
     }
-     
-    section.contact .support{
+
+    section.contact .support {
         flex-direction: column;
     }
 
-    section.contact .support .para{
+    section.contact .support .para {
         width: 90%;
         align-items: center;
     }
+
     section.contact .support .para h5 {
         font-size: 6.5vw;
         text-align: center;
@@ -1941,7 +1952,7 @@ footer .down p span {
     footer .up h4 {
         font-size: 6vw;
         margin-top: 5vw;
-        
+
     }
 
     footer .up .first img {
@@ -1964,7 +1975,7 @@ footer .down p span {
 
     footer .up .link ul li {
         font-size: 4.5vw;
-        line-height:5vh;
+        line-height: 5vh;
 
     }
 
@@ -1988,7 +1999,8 @@ footer .down p span {
         width: 75%;
         border-radius: 8vw;
     }
-    footer .up .subscribe .form form button{
+
+    footer .up .subscribe .form form button {
         width: 10vw;
         height: 7vh;
     }
@@ -2003,7 +2015,7 @@ footer .down p span {
         font-size: 8vw;
     }
 
-    footer .down p{
+    footer .down p {
         font-size: 4.5vw;
         text-align: center;
     }
@@ -2012,8 +2024,8 @@ footer .down p span {
         color: #050978;
     }
 
-    
-    footer .down{
+
+    footer .down {
         height: 10vh;
         margin-top: 5vh;
         padding: 2vw 3vw;
